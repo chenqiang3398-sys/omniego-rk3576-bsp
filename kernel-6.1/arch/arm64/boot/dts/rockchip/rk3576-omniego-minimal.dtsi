@@ -1,0 +1,54 @@
+// SPDX-License-Identifier: (GPL-2.0+ OR MIT)
+
+/*
+ * Minimal boot configuration for the MLK-CR03 core module on the
+ * OmniEgo carrier. Keep the vendor-verified power baseline until the
+ * core-module power tree and IO domains have been confirmed.
+ */
+
+#include "rk3576-evb.dtsi"
+#include "rk3576-rk806.dtsi"
+#include "rk03/mmc.dtsi"
+#include "rk03/uart.dtsi"
+
+/ {
+	aliases {
+		/delete-property/ spi1;
+	};
+};
+
+/* TF is not required for the first eMMC boot milestone. */
+&sdmmc {
+	status = "disabled";
+};
+
+/* Carrier peripherals are enabled one at a time after minimal boot. */
+&combphy1_psu {
+	status = "disabled";
+};
+
+&hdmi_sound {
+	status = "disabled";
+};
+
+&i2c0 {
+	status = "disabled";
+	/delete-node/ gt1x@14;
+};
+
+&leds {
+	status = "disabled";
+};
+
+/* Drop vendor-carrier pin references from controllers kept disabled. */
+&sdio {
+	/delete-property/ pinctrl-0;
+};
+
+&uart4 {
+	/delete-property/ pinctrl-0;
+};
+
+&uart8 {
+	/delete-property/ pinctrl-0;
+};

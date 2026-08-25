@@ -62,6 +62,13 @@ ROOTFS_HOSTNAME="$ROOTFS_HOSTNAME" TARGET_USER="$TARGET_USER" \
 	TARGET_PASSWORD="$TARGET_PASSWORD" UBUNTU_PROFILE="$UBUNTU_PROFILE" \
 	chroot "$TARGET_ROOTFS_DIR" /tmp/configure-target.sh
 
+# Ubuntu owns its desktop policy overlay. Do not import debian/overlay as a
+# whole because it also contains Debian-specific packages and service policy.
+if [ -d "$SCRIPT_DIR/overlay" ]; then
+	echo "Installing Ubuntu rootfs overlay..."
+	cp -a "$SCRIPT_DIR/overlay/." "$TARGET_ROOTFS_DIR/"
+fi
+
 echo "Installing kernel modules from $KERNEL_MODULES_DIR..."
 cp -a "$KERNEL_MODULES_DIR/lib/modules" "$TARGET_ROOTFS_DIR/lib/"
 for release_dir in "$TARGET_ROOTFS_DIR"/lib/modules/*; do

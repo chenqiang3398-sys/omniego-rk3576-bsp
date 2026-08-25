@@ -200,6 +200,10 @@ build_ubuntu()
 	message "  arch=$RK_UBUNTU_ARCH profile=$RK_UBUNTU_PROFILE"
 	message "=========================================="
 
+	# mk-image.sh runs as root, but this directory must remain removable by
+	# the SDK owner on the next incremental build.
+	mkdir -p "$MANIFEST_DIR"
+
 	# build_ubuntu() is the adapter between Rockchip's rootfs contract and
 	# ubuntu/mk-*.sh. It must produce exactly IMAGE_DIR/rootfs.ext4.
 	sudo rm -rf "$TARGET_DIR"
@@ -216,9 +220,10 @@ build_ubuntu()
 		KERNEL_MODULES_DIR="$MODULES_DIR" \
 		"$RK_SDK_DIR/ubuntu/mk-rootfs-noble.sh" "$TARGET_DIR"
 
-	# Reuse the SDK's fstab, hostname, udev and overlay lifecycle. Explicit
-	# OS/init arguments keep hook behavior stable even before image mounting.
-	RK_SESSION=latest "$RK_SCRIPTS_DIR/build.sh" post-rootfs \
+	# A debootstrap tree preserves target UID/GID ownership and is not writable
+	# by the host user. Match the vendor Debian lifecycle and run target-side
+	# post hooks as root; build.sh now propagates any failing hook status.
+	sudo -E env USER=root "$RK_SCRIPTS_DIR/post-rootfs.sh" \
 		"$TARGET_DIR" ubuntu systemd
 
 	sudo -E "$RK_SDK_DIR/ubuntu/mk-image.sh" \
@@ -297,8 +302,7 @@ clean_hook()
 	rm -rf "$RK_OUTDIR/buildroot"
 	rm -rf "$RK_OUTDIR/yocto"
 	rm -rf "$RK_OUTDIR/debian"
-	sudo rm -rf "$RK_SDK_DIR/ubuntu/binary"
-	rm -rf "$RK_OUTDIR/ubuntu"
+	sudo rm -rf "$RK_SDK_DIR/ubuntu/binary" "$RK_OUTDIR/ubuntu"
 	rm -rf "$RK_OUTDIR/rootfs"
 	rm -rf "$RK_FIRMWARE_DIR/rootfs.img"
 }
@@ -391,7 +395,13 @@ build_hook()
 		*) usage ;;
 	esac
 
-	rm -rf "$ROOTFS_DIR" "$RK_OUTDIR/rootfs"
+	if [ "$ROOTFS" = ubuntu ]; then
+		# Previous Ubuntu image/manifest files are created by privileged tools.
+		sudo rm -rf "$ROOTFS_DIR"
+	else
+		rm -rf "$ROOTFS_DIR"
+	fi
+	rm -rf "$RK_OUTDIR/rootfs"
 	mkdir -p "$IMAGE_DIR"
 	ln -rsf "$ROOTFS_DIR" "$RK_OUTDIR/rootfs"
 

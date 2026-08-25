@@ -21,7 +21,8 @@ Select the same board configuration used by the verified boot image, then run:
 ./build.sh kernel-modules
 ```
 
-The expected module staging directory is normally `output/<board>/kernel-modules`.
+For the current board configuration, the module staging directory is
+`output/kernel-modules`.
 
 ## SDK build entry
 
@@ -34,7 +35,7 @@ The default profile is `desktop`:
 The build produces the SDK-compatible paths:
 
 ```text
-output/<board>/ubuntu/images/rootfs.ext4
+output/ubuntu/images/rootfs.ext4
 output/firmware/rootfs.img
 ```
 

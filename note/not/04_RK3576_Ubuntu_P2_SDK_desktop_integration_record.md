@@ -31,7 +31,7 @@ ubuntu/mk-image.sh <rootfs-dir> <output-image> [size-mib] [manifest-dir]
 SDK 中的 `build_ubuntu()` 只负责参数适配和生命周期编排。该接口的关键契约是最终必须生成：
 
 ```text
-output/<board>/ubuntu/images/rootfs.ext4
+output/ubuntu/images/rootfs.ext4
 output/firmware/rootfs.img
 ```
 
@@ -89,7 +89,7 @@ cd /home/magine/uisrc/mlk-sdk-3576-v1.1.0
 
 ```bash
 readlink -f output/firmware/rootfs.img
-sha256sum output/*/ubuntu/images/rootfs.ext4
+sha256sum output/ubuntu/images/rootfs.ext4
 findmnt -R ubuntu/binary
 ```
 

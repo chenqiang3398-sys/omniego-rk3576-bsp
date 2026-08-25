@@ -1,6 +1,8 @@
 # RK3576 Ubuntu 24.04 rootfs
 
-This directory builds the P1 minimal Ubuntu 24.04 arm64 rootfs. It does not yet install the Rockchip GPU, multimedia, camera, or NPU userspace stacks.
+This directory builds Ubuntu 24.04 arm64 rootfs images for the RK3576 SDK.
+The P2 default profile includes Xfce, LightDM and X11. Rockchip GPU,
+multimedia, camera and NPU userspace enablement remains a separate P3 task.
 
 ## Host dependencies
 
@@ -21,7 +23,27 @@ Select the same board configuration used by the verified boot image, then run:
 
 The expected module staging directory is normally `output/<board>/kernel-modules`.
 
-## Build the minimal rootfs
+## SDK build entry
+
+The default profile is `desktop`:
+
+```bash
+./build.sh ubuntu
+```
+
+The build produces the SDK-compatible paths:
+
+```text
+output/<board>/ubuntu/images/rootfs.ext4
+output/firmware/rootfs.img
+```
+
+The second path is a relative symlink consumed by the existing `firmware` and
+`updateimg` packaging flows.
+
+## P1 compatibility entry
+
+The original minimal-rootfs command remains available for reproducing P1:
 
 ```bash
 sudo ubuntu/build-minimal-rootfs.sh
@@ -48,3 +70,17 @@ output/ubuntu-noble/manifests/rootfs.ext4.sha256
 
 This image is intended to be flashed only to the existing `rootfs` partition. Keep the known-good Loader, U-Boot, boot.img, DTB, and parameter image unchanged.
 
+## Script interfaces
+
+The SDK adapter in `device/rockchip/common/scripts/mk-rootfs.sh` calls these
+stable interfaces in order:
+
+```text
+mk-base-ubuntu.sh <target-dir> [release] [arch] [mirror]
+mk-rootfs-noble.sh <target-dir>
+mk-image.sh <rootfs-dir> <output-image> [size-mib] [manifest-dir]
+```
+
+Do not call the latter two against a mounted or incomplete chroot. All rootfs
+builders install cleanup traps so interrupted builds do not leave recursive
+`dev`, `proc` or `sys` mounts behind.

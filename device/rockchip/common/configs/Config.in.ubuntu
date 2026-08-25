@@ -1,0 +1,86 @@
+#
+
+config RK_UBUNTU_SUPPORTS
+	bool
+	default y if RK_CHIP_FAMILY = "rk3576"
+
+comment "Ubuntu is not supported for this chip"
+	depends on !RK_UBUNTU_SUPPORTS
+
+menuconfig RK_UBUNTU
+	bool "Ubuntu"
+	depends on RK_UBUNTU_SUPPORTS
+	default y
+
+if RK_UBUNTU
+
+config RK_UBUNTU_VERSION
+	string
+	default "noble" if RK_UBUNTU_NOBLE
+
+choice
+	prompt "Ubuntu release"
+	default RK_UBUNTU_NOBLE
+
+config RK_UBUNTU_NOBLE
+	bool "24.04 LTS (noble)"
+
+endchoice
+
+config RK_UBUNTU_ARCH
+	string
+	default "arm64" if RK_UBUNTU_ARM64
+
+choice
+	prompt "Ubuntu rootfs architecture"
+	default RK_UBUNTU_ARM64
+
+config RK_UBUNTU_ARM64
+	bool "arm64"
+	depends on !RK_CHIP_ARM32
+
+endchoice
+
+config RK_UBUNTU_PROFILE
+	string
+	default "minimal" if RK_UBUNTU_PROFILE_MINIMAL
+	default "desktop" if RK_UBUNTU_PROFILE_DESKTOP
+
+choice
+	prompt "Ubuntu image profile"
+	default RK_UBUNTU_PROFILE_DESKTOP
+
+config RK_UBUNTU_PROFILE_MINIMAL
+	bool "Minimal (serial, SSH and network)"
+
+config RK_UBUNTU_PROFILE_DESKTOP
+	bool "Desktop (Xfce, LightDM and X11)"
+
+endchoice
+
+config RK_UBUNTU_MIRROR
+	string "Ubuntu ports mirror"
+	default "http://ports.ubuntu.com/ubuntu-ports"
+
+config RK_UBUNTU_IMAGE_SIZE_MB
+	int "Ubuntu ext4 image size (MiB)"
+	range 2048 12288
+	default 5120 if RK_UBUNTU_PROFILE_DESKTOP
+	default 3072
+
+config RK_UBUNTU_HOSTNAME
+	string "Ubuntu hostname"
+	default "rk3576-ubuntu"
+
+config RK_UBUNTU_USER
+	string "Initial Ubuntu user"
+	default "linaro"
+
+config RK_UBUNTU_PASSWORD
+	string "Initial Ubuntu password"
+	default "linaro"
+	help
+	  Development-only initial password. Production images must override it.
+
+endif # RK_UBUNTU
+endmenuconfig # Ubuntu

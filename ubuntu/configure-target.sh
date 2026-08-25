@@ -5,9 +5,14 @@ export DEBIAN_FRONTEND=noninteractive
 : "${ROOTFS_HOSTNAME:=rk3576-ubuntu}"
 : "${TARGET_USER:=linaro}"
 : "${TARGET_PASSWORD:=linaro}"
+: "${UBUNTU_PROFILE:=minimal}"
 
 apt-get update
-xargs -r apt-get install -y --no-install-recommends < /tmp/base.packages
+find /tmp/ubuntu-packages -type f -name '*.packages' -print0 \
+	| sort -z \
+	| xargs -0 cat \
+	| sed '/^[[:space:]]*#/d;/^[[:space:]]*$/d' \
+	| xargs -r apt-get install -y --no-install-recommends
 
 echo "en_US.UTF-8 UTF-8" > /etc/locale.gen
 locale-gen
@@ -41,7 +46,20 @@ ExecStartPre=/usr/sbin/sshd -t
 EOF
 systemctl enable ssh.service
 systemctl enable NetworkManager.service
-systemctl set-default multi-user.target
+
+if [ "$UBUNTU_PROFILE" = desktop ]; then
+	# LightDM owns the X11 login lifecycle; Mali acceleration is added in P3.
+	install -d -m 0755 /etc/lightdm/lightdm.conf.d
+	cat > /etc/lightdm/lightdm.conf.d/50-rk3576.conf <<EOF
+[Seat:*]
+greeter-session=lightdm-gtk-greeter
+user-session=xfce
+EOF
+	systemctl enable lightdm.service
+	systemctl set-default graphical.target
+else
+	systemctl set-default multi-user.target
+fi
 
 cat > /etc/fstab <<'EOF'
 PARTUUID=614e0000-0000-4b53-8000-1d28000054a9 / ext4 defaults,noatime 0 1

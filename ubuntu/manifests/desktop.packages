@@ -1,0 +1,15 @@
+accountsservice
+dbus-x11
+fonts-dejavu-core
+lightdm
+lightdm-gtk-greeter
+mesa-utils
+network-manager-gnome
+policykit-1
+x11-xserver-utils
+xauth
+xfce4
+xfce4-terminal
+xinit
+xserver-xorg
+xserver-xorg-input-libinput

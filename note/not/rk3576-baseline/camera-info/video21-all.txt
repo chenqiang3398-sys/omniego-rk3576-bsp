@@ -1,0 +1,47 @@
+Driver Info:
+	Driver name      : rkvpss_v0
+	Card type        : rkvpss_scale0
+	Bus info         : platform:rkvpss-vir0
+	Driver version   : 6.1.99
+	Capabilities     : 0x84201000
+		Video Capture Multiplanar
+		Streaming
+		Extended Pix Format
+		Device Capabilities
+	Device Caps      : 0x04201000
+		Video Capture Multiplanar
+		Streaming
+		Extended Pix Format
+Media Driver Info:
+	Driver name      : rkvpss-vir0
+	Model            : rkvpss0
+	Serial           : 
+	Bus info         : platform:rkvpss-vir0
+	Media version    : 6.1.99
+	Hardware revision: 0x00000000 (0)
+	Driver version   : 6.1.99
+Interface Info:
+	ID               : 0x03000005
+	Type             : V4L Video
+Entity Info:
+	ID               : 0x00000004 (4)
+	Name             : rkvpss_scale0
+	Function         : V4L2 I/O
+	Pad 0x01000007   : 0: Sink
+	  Link 0x02000018: from remote pad 0x1000003 of entity 'rkvpss-subdev' (Video Composer): Data, Enabled
+Priority: 2
+Format Video Capture Multiplanar:
+	Width/Height      : 800/600
+	Pixel Format      : 'NV12' (Y/UV 4:2:0)
+	Field             : None
+	Number of planes  : 1
+	Flags             : 
+	Colorspace        : Default
+	Transfer Function : Default
+	YCbCr/HSV Encoding: Default
+	Quantization      : Full Range
+	Plane 0           :
+	   Bytes per Line : 800
+	   Size Image     : 720000
+Selection Video Capture: crop, Left 0, Top 0, Width 800, Height 600, Flags: 
+Selection Video Output: crop, Left 0, Top 0, Width 800, Height 600, Flags: 

@@ -1,0 +1,35 @@
+Driver Info:
+	Driver name      : rkisp_v10
+	Card type        : rkisp-input-params
+	Bus info         : platform: rkisp
+	Driver version   : 2.9.0
+	Capabilities     : 0x8c200000
+		Metadata Output
+		Streaming
+		Extended Pix Format
+		Device Capabilities
+	Device Caps      : 0x0c200000
+		Metadata Output
+		Streaming
+		Extended Pix Format
+Media Driver Info:
+	Driver name      : rkisp-vir0
+	Model            : rkisp0
+	Serial           : 
+	Bus info         : platform:rkisp-vir0
+	Media version    : 6.1.99
+	Hardware revision: 0x00000000 (0)
+	Driver version   : 6.1.99
+Interface Info:
+	ID               : 0x03000032
+	Type             : V4L Video
+Entity Info:
+	ID               : 0x00000030 (48)
+	Name             : rkisp-input-params
+	Function         : V4L2 I/O
+	Pad 0x01000031   : 0: Source
+	  Link 0x02000034: to remote pad 0x1000003 of entity 'rkisp-isp-subdev' (Unknown V4L2 Sub-Device): Data, Enabled
+Priority: 2
+Format Metadata Output:
+	Sample Format   : 'RK1P' (Rockchip ISP1 3A Parameters)
+	Buffer Size     : 13827

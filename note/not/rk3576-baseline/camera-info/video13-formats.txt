@@ -1,0 +1,15 @@
+ioctl: VIDIOC_ENUM_FMT
+	Type: Video Capture Multiplanar
+
+	[0]: 'UYVY' (UYVY 4:2:2)
+		Size: Stepwise 32x32 - 800x600 with step 8/8
+	[1]: 'NV16' (Y/UV 4:2:2)
+		Size: Stepwise 32x32 - 800x600 with step 8/8
+	[2]: 'NV61' (Y/VU 4:2:2)
+		Size: Stepwise 32x32 - 800x600 with step 8/8
+	[3]: 'NV21' (Y/VU 4:2:0)
+		Size: Stepwise 32x32 - 800x600 with step 8/8
+	[4]: 'NV12' (Y/UV 4:2:0)
+		Size: Stepwise 32x32 - 800x600 with step 8/8
+	[5]: 'GREY' (8-bit Greyscale)
+		Size: Stepwise 32x32 - 800x600 with step 8/8

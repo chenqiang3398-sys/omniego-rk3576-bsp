@@ -1,0 +1,2 @@
+/lib/modules/bcmdhd.ko
+/lib/modules/bcmdhd_pcie.ko

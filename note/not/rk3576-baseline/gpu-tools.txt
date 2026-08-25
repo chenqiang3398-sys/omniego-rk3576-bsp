@@ -1,0 +1,5 @@
+/usr/bin/eglinfo
+/usr/bin/glmark2-es2-wayland
+/usr/bin/glmark2-es2-drm
+/usr/bin/glmark2-es2
+/usr/bin/modetest

@@ -1,0 +1,17 @@
+ii  evtest                                           1:1.35-1                                arm64        utility to monitor Linux input device events
+ii  gir1.2-ibus-1.0:arm64                            1.5.27-5                                arm64        Intelligent Input Bus - introspection data
+ii  ibus                                             1.5.27-5                                arm64        Intelligent Input Bus - core
+ii  ibus-data                                        1.5.27-5                                all          Intelligent Input Bus - data files
+ii  input-utils                                      1.0-1.1+b1                              arm64        utilities for the input layer of the Linux kernel
+ii  libibus-1.0-5:arm64                              1.5.27-5                                arm64        Intelligent Input Bus - shared library
+ii  libinput-bin                                     1.22.1-1                                arm64        input device management and event handling library - udev quirks
+ii  libinput-dev:arm64                               1.22.1-1                                arm64        input device management and event handling library - development files
+ii  libinput10:arm64                                 1.22.1-1                                arm64        input device management and event handling library - shared library
+ii  libpinyin-data:arm64                             2.8.1-1                                 arm64        Data for PinYin / zhuyin input method library
+ii  libxcb-xinput0:arm64                             1.15-1                                  arm64        X C Binding, xinput extension
+ii  libxi-dev:arm64                                  2:1.8-1+b1                              arm64        X11 Input extension library (development headers)
+ii  libxi6:arm64                                     2:1.8-1+b1                              arm64        X11 Input extension library
+ii  python3-ibus-1.0                                 1.5.27-5                                all          Intelligent Input Bus - introspection overrides for Python (Python 3)
+ii  xserver-xorg-input-all                           1:7.7+23                                arm64        X.Org X server -- input driver metapackage
+ii  xserver-xorg-input-evdev                         1:2.10.6-2+b1                           arm64        X.Org X server -- evdev input driver
+ii  xserver-xorg-input-libinput                      1.2.1-1+b1                              arm64        X.Org X server -- libinput input driver

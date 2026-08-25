@@ -1,0 +1,49 @@
+Driver Info:
+	Driver name      : rkisp_v10
+	Card type        : rkisp_mainpath
+	Bus info         : platform:rkisp-vir0
+	Driver version   : 2.9.0
+	Capabilities     : 0x84201000
+		Video Capture Multiplanar
+		Streaming
+		Extended Pix Format
+		Device Capabilities
+	Device Caps      : 0x04201000
+		Video Capture Multiplanar
+		Streaming
+		Extended Pix Format
+Media Driver Info:
+	Driver name      : rkisp-vir0
+	Model            : rkisp0
+	Serial           : 
+	Bus info         : platform:rkisp-vir0
+	Media version    : 6.1.99
+	Hardware revision: 0x00000000 (0)
+	Driver version   : 6.1.99
+Interface Info:
+	ID               : 0x03000007
+	Type             : V4L Video
+Entity Info:
+	ID               : 0x00000006 (6)
+	Name             : rkisp_mainpath
+	Function         : V4L2 I/O
+	Pad 0x01000009   : 0: Sink
+	  Link 0x0200000a: from remote pad 0x1000004 of entity 'rkisp-isp-subdev' (Unknown V4L2 Sub-Device): Data, Enabled
+Priority: 2
+Format Video Capture Multiplanar:
+	Width/Height      : 800/600
+	Pixel Format      : 'NV12' (Y/UV 4:2:0)
+	Field             : None
+	Number of planes  : 1
+	Flags             : 
+	Colorspace        : Default
+	Transfer Function : Default
+	YCbCr/HSV Encoding: Default
+	Quantization      : Full Range
+	Plane 0           :
+	   Bytes per Line : 800
+	   Size Image     : 720000
+Selection Video Capture: crop, Left 0, Top 0, Width 800, Height 600, Flags: 
+Selection Video Capture: crop_bounds, Left 0, Top 0, Width 800, Height 600, Flags: 
+Selection Video Output: crop, Left 0, Top 0, Width 800, Height 600, Flags: 
+Selection Video Output: crop_bounds, Left 0, Top 0, Width 800, Height 600, Flags: 

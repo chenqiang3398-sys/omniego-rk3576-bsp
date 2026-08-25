@@ -1,0 +1,80 @@
+ii  camera-engine-rkaiq                              6.9.0                                   arm64        3A libraries match Rockchip rkisp v39(rk3576).
+ii  gir1.2-clutter-gst-3.0:arm64                     3.0.27-3                                arm64        Gobject introspection data for Clutter GStreamer elements
+hi  gir1.2-gst-plugins-bad-1.0:arm64                 1.22.9-2                                arm64        GObject introspection data for the GStreamer libraries from the "bad" set
+hi  gir1.2-gst-plugins-base-1.0:arm64                1.22.9-1                                arm64        GObject introspection data for the GStreamer Plugins Base library
+hi  gir1.2-gstreamer-1.0:arm64                       1.22.9-1                                arm64        GObject introspection data for the GStreamer library
+ii  gnome-video-effects                              0.5.0-1                                 all          Collection of GStreamer effects
+hi  gstreamer1.0-alsa:arm64                          1.22.9-1                                arm64        GStreamer plugin for ALSA
+hi  gstreamer1.0-alsa-dbgsym:arm64                   1.22.9-1                                arm64        debug symbols for gstreamer1.0-alsa
+ii  gstreamer1.0-clutter-3.0:arm64                   3.0.27-3                                arm64        Clutter PLugin for GStreamer 1.0
+hi  gstreamer1.0-gl:arm64                            1.22.9-1                                arm64        GStreamer plugins for GL
+hi  gstreamer1.0-gl-dbgsym:arm64                     1.22.9-1                                arm64        debug symbols for gstreamer1.0-gl
+hi  gstreamer1.0-gtk3:arm64                          1.22.9-1                                arm64        GStreamer plugin for GTK+3
+hi  gstreamer1.0-gtk3-dbgsym:arm64                   1.22.9-1                                arm64        debug symbols for gstreamer1.0-gtk3
+hi  gstreamer1.0-opencv:arm64                        1.22.9-2                                arm64        GStreamer OpenCV plugins
+hi  gstreamer1.0-opencv-dbgsym:arm64                 1.22.9-2                                arm64        debug symbols for gstreamer1.0-opencv
+hi  gstreamer1.0-plugins-bad:arm64                   1.22.9-2                                arm64        GStreamer plugins from the "bad" set
+hi  gstreamer1.0-plugins-bad-apps                    1.22.9-2                                arm64        GStreamer helper programs from the "bad" set
+hi  gstreamer1.0-plugins-bad-apps-dbgsym             1.22.9-2                                arm64        debug symbols for gstreamer1.0-plugins-bad-apps
+hi  gstreamer1.0-plugins-bad-dbgsym:arm64            1.22.9-2                                arm64        debug symbols for gstreamer1.0-plugins-bad
+hi  gstreamer1.0-plugins-base:arm64                  1.22.9-1                                arm64        GStreamer plugins from the "base" set
+hi  gstreamer1.0-plugins-base-apps                   1.22.9-1                                arm64        GStreamer helper programs from the "base" set
+hi  gstreamer1.0-plugins-base-apps-dbgsym            1.22.9-1                                arm64        debug symbols for gstreamer1.0-plugins-base-apps
+hi  gstreamer1.0-plugins-base-dbgsym:arm64           1.22.9-1                                arm64        debug symbols for gstreamer1.0-plugins-base
+hi  gstreamer1.0-plugins-good:arm64                  1.22.9-1                                arm64        GStreamer plugins from the "good" set
+hi  gstreamer1.0-plugins-good-dbgsym:arm64           1.22.9-1                                arm64        debug symbols for gstreamer1.0-plugins-good
+ii  gstreamer1.0-plugins-ugly:arm64                  1.22.0-2+deb12u1                        arm64        GStreamer plugins from the "ugly" set
+hi  gstreamer1.0-pulseaudio:arm64                    1.22.9-1                                arm64        GStreamer plugin for PulseAudio (transitional package)
+hi  gstreamer1.0-rockchip1                           1.14-4                                  arm64        The Gstreamer plugins for Rockchip platforms.
+hi  gstreamer1.0-rockchip1-dbgsym                    1.14-4                                  arm64        debug symbols for gstreamer1.0-rockchip1
+hi  gstreamer1.0-tools                               1.22.9-1                                arm64        Tools for use with GStreamer
+hi  gstreamer1.0-tools-dbgsym                        1.22.9-1                                arm64        debug symbols for gstreamer1.0-tools
+hi  gstreamer1.0-wpe:arm64                           1.22.9-2                                arm64        GStreamer WPEWebKit plugin
+hi  gstreamer1.0-wpe-dbgsym:arm64                    1.22.9-2                                arm64        debug symbols for gstreamer1.0-wpe
+hi  gstreamer1.0-x:arm64                             1.22.9-1                                arm64        GStreamer plugins for X11 and Pango
+hi  gstreamer1.0-x-dbgsym:arm64                      1.22.9-1                                arm64        debug symbols for gstreamer1.0-x
+ii  insserv                                          1.24.0-1                                arm64        boot sequence organizer using LSB init.d script dependency information
+ii  libclutter-gst-3.0-0:arm64                       3.0.27-3                                arm64        Open GL based interactive canvas library GStreamer elements
+ii  libclutter-gst-3.0-dev:arm64                     3.0.27-3                                arm64        Open GL based interactive canvas library GStreamer elements (development files)
+hi  libgstreamer-gl1.0-0:arm64                       1.22.9-1                                arm64        GStreamer GL libraries
+hi  libgstreamer-gl1.0-0-dbgsym:arm64                1.22.9-1                                arm64        debug symbols for libgstreamer-gl1.0-0
+hi  libgstreamer-opencv1.0-0:arm64                   1.22.9-2                                arm64        GStreamer OpenCV libraries
+hi  libgstreamer-opencv1.0-0-dbgsym:arm64            1.22.9-2                                arm64        debug symbols for libgstreamer-opencv1.0-0
+hi  libgstreamer-plugins-bad1.0-0:arm64              1.22.9-2                                arm64        GStreamer libraries from the "bad" set
+hi  libgstreamer-plugins-bad1.0-0-dbgsym:arm64       1.22.9-2                                arm64        debug symbols for libgstreamer-plugins-bad1.0-0
+hi  libgstreamer-plugins-bad1.0-dev:arm64            1.22.9-2                                arm64        GStreamer development files for libraries from the "bad" set
+hi  libgstreamer-plugins-base1.0-0:arm64             1.22.9-1                                arm64        GStreamer libraries from the "base" set
+hi  libgstreamer-plugins-base1.0-0-dbgsym:arm64      1.22.9-1                                arm64        debug symbols for libgstreamer-plugins-base1.0-0
+hi  libgstreamer-plugins-base1.0-dev                 1.22.9-1                                arm64        GStreamer development files for libraries from the "base" set
+hi  libgstreamer1.0-0:arm64                          1.22.9-1                                arm64        Core GStreamer libraries and elements
+hi  libgstreamer1.0-0-dbgsym:arm64                   1.22.9-1                                arm64        debug symbols for libgstreamer1.0-0
+hi  libgstreamer1.0-dev:arm64                        1.22.9-1                                arm64        GStreamer core development files
+hi  libgstreamer1.0-dev-dbgsym:arm64                 1.22.9-1                                arm64        debug symbols for libgstreamer1.0-dev
+hi  librga-dev                                       2.2.0-1                                 arm64        Userspace interface to Rockchip RGA 2D accelerator
+hi  librga2                                          2.2.0-1                                 arm64        Userspace interface to Rockchip RGA 2D accelerator
+hi  librga2-dbgsym                                   2.2.0-1                                 arm64        debug symbols for librga2
+hi  librockchip-mpp-dev                              1.5.0-1                                 arm64        Media Process Platform
+hi  librockchip-mpp1                                 1.5.0-1                                 arm64        Media Process Platform
+hi  librockchip-mpp1-dbgsym                          1.5.0-1                                 arm64        debug symbols for librockchip-mpp1
+hi  librockchip-vpu0                                 1.5.0-1                                 arm64        Media Process Platform
+hi  librockchip-vpu0-dbgsym                          1.5.0-1                                 arm64        debug symbols for librockchip-vpu0
+hi  libv4l-0:arm64                                   1.22.1-5                                arm64        Collection of video4linux support libraries
+hi  libv4l-0-dbgsym:arm64                            1.22.1-5                                arm64        debug symbols for libv4l-0
+hi  libv4l-dev:arm64                                 1.22.1-5                                arm64        Collection of video4linux support libraries (development files)
+hi  libv4l-rkmpp                                     1.7.0-1                                 arm64        A rockchip-mpp V4L2 wrapper plugin for chromium video dec and enc
+hi  libv4l-rkmpp-dbgsym                              1.7.0-1                                 arm64        debug symbols for libv4l-rkmpp
+hi  libv4l2rds0:arm64                                1.22.1-5                                arm64        Video4Linux Radio Data System (RDS) decoding library
+hi  libv4l2rds0-dbgsym:arm64                         1.22.1-5                                arm64        debug symbols for libv4l2rds0
+hi  libv4lconvert0:arm64                             1.22.1-5                                arm64        Video4linux frame format conversion library
+hi  libv4lconvert0-dbgsym:arm64                      1.22.1-5                                arm64        debug symbols for libv4lconvert0
+hi  qv4l2                                            1.22.1-5                                arm64        Test bench application for video4linux devices
+hi  qv4l2-dbgsym                                     1.22.1-5                                arm64        debug symbols for qv4l2
+ii  rhythmbox                                        3.4.6-2+b1                              arm64        music player and organizer for GNOME
+hi  rktoolkit:arm64                                  1.0.0-1                                 arm64        some small tool used in Rockchip SDK
+hi  rkwifibt-broadcom-firmware                       1.0.0-1                                 arm64        include the rkwifibt broadcom firmware for rockchip linux
+hi  rkwifibt-dev-tools                               1.0.0-1                                 arm64        include the rkwifibt broadcom tools for rockchip linux
+hi  rkwifibt-realtek-firmware                        1.0.0-1                                 arm64        include the rkwifibt realtek firmware for rockchip linux
+hi  rockchip-mpp-demos                               1.5.0-1                                 arm64        Media Process Platform Demos
+hi  rockchip-mpp-demos-dbgsym                        1.5.0-1                                 arm64        debug symbols for rockchip-mpp-demos
+hi  v4l-utils                                        1.22.1-5                                arm64        Collection of command line video4linux utilities
+hi  v4l-utils-dbgsym                                 1.22.1-5                                arm64        debug symbols for v4l-utils

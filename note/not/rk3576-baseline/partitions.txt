@@ -1,0 +1,14 @@
+NAME          SIZE FSTYPE LABEL    PARTLABEL PARTUUID                             MOUNTPOINTS
+mmcblk1      29.2G                                                                
+mmcblk0      29.1G                                                                
+├─mmcblk0p1     4M                 uboot     01490000-0000-4a38-8000-279800006e87 
+├─mmcblk0p2     4M                 misc      3c1c0000-0000-4a30-8000-64e500007342 
+├─mmcblk0p3    64M                 boot      7a3f0000-0000-446a-8000-702f00006273 
+├─mmcblk0p4   128M                 recovery  1f260000-0000-4b42-8000-76420000208d 
+├─mmcblk0p5    32M                 backup    583c0000-0000-4c0b-8000-1be2000008ae 
+├─mmcblk0p6    14G ext4            rootfs    614e0000-0000-4b53-8000-1d28000054a9 /
+├─mmcblk0p7   128M ext4   oem      oem       bf000000-0000-463e-8000-346e00004ece /oem
+└─mmcblk0p8  14.8G ext4   userdata userdata  7d640000-0000-4030-8000-50ea0000435d /userdata
+mmcblk0boot0    4M                                                                
+mmcblk0boot1    4M                                                                
+zram0           0B                                                                

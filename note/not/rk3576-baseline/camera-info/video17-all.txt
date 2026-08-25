@@ -1,0 +1,35 @@
+Driver Info:
+	Driver name      : rkisp_v10
+	Card type        : rkisp-statistics
+	Bus info         : platform: rkisp
+	Driver version   : 2.9.0
+	Capabilities     : 0x84a00000
+		Metadata Capture
+		Streaming
+		Extended Pix Format
+		Device Capabilities
+	Device Caps      : 0x04a00000
+		Metadata Capture
+		Streaming
+		Extended Pix Format
+Media Driver Info:
+	Driver name      : rkisp-vir0
+	Model            : rkisp0
+	Serial           : 
+	Bus info         : platform:rkisp-vir0
+	Media version    : 6.1.99
+	Hardware revision: 0x00000000 (0)
+	Driver version   : 6.1.99
+Interface Info:
+	ID               : 0x0300002c
+	Type             : V4L Video
+Entity Info:
+	ID               : 0x0000002a (42)
+	Name             : rkisp-statistics
+	Function         : V4L2 I/O
+	Pad 0x0100002b   : 0: Sink
+	  Link 0x0200002e: from remote pad 0x1000005 of entity 'rkisp-isp-subdev' (Unknown V4L2 Sub-Device): Data, Enabled
+Priority: 2
+Format Metadata Capture:
+	Sample Format   : 'RK1S' (Rockchip ISP1 3A Statistics)
+	Buffer Size     : 13568

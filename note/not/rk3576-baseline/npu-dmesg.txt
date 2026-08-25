@@ -1,0 +1,31 @@
+[    2.602272] rk_gmac-dwmac 2a220000.ethernet: clock input or output? (output).
+[    2.740230] rk_gmac-dwmac 2a230000.ethernet: clock input or output? (output).
+[    2.882739] input: 27330000.pwm as /devices/platform/27330000.pwm/input/input0
+[    2.896190] input: rk805 pwrkey as /devices/platform/2ac40000.i2c/i2c-1/1-0023/rk805-pwrkey.2.auto/input/input1
+[    3.078553] input: gsensor as /devices/platform/2acb0000.i2c/i2c-8/8-0068/input/input2
+[    4.544664] rkisp_hw 27c00000.isp: max input:0x0@0fps
+[    4.581063] input: headset-keys as /devices/platform/es8388-sound/input/input3
+[    4.643337] input: rockchip-es8388 Headset as /devices/platform/es8388-sound/sound/card0/input4
+[    4.734620] input: gyro as /devices/platform/2acb0000.i2c/i2c-8/8-0068-1/input/input5
+[    4.856789] input: adc-keys as /devices/platform/adc-keys/input/input6
+[    4.886359] input: rockchip-dp0 rockchip-dp0 as /devices/platform/dp0-sound/sound/card1/input7
+[    4.888721] input: rockchip-hdmi rockchip-hdmi as /devices/platform/hdmi-sound/sound/card2/input8
+[    4.892681] RKNPU 27700000.npu: Adding to iommu group 0
+[    4.892980] RKNPU 27700000.npu: RKNPU: rknpu iommu is enabled, using iommu mode
+[    4.893391] RKNPU 27700000.npu: can't request region for resource [mem 0x27700000-0x27707fff]
+[    4.893429] RKNPU 27700000.npu: can't request region for resource [mem 0x27708000-0x2770ffff]
+[    4.894000] [drm] Initialized rknpu 0.9.8 20240828 for 27700000.npu on minor 1
+[    4.895896] RKNPU 27700000.npu: bin=0
+[    4.896082] RKNPU 27700000.npu: leakage=7
+[    4.896118] debugfs: Directory '27700000.npu-rknpu' with parent 'vdd_npu_s0' already present!
+[    4.897903] RKNPU 27700000.npu: pvtm=875
+[    4.898520] RKNPU 27700000.npu: pvtm-volt-sel=8
+[    4.898538] RKNPU 27700000.npu: soc version=0, speed=8
+[    4.898600] debugfs: Directory '27700000.npu-rknpu' with parent 'vdd_npu_s0' already present!
+[    4.899522] RKNPU 27700000.npu: avs=0
+[    4.899692] RKNPU 27700000.npu: EM: OPP:600000 is inefficient
+[    4.899698] RKNPU 27700000.npu: EM: OPP:500000 is inefficient
+[    4.899701] RKNPU 27700000.npu: EM: OPP:400000 is inefficient
+[    4.899847] RKNPU 27700000.npu: EM: created perf domain
+[    4.900215] RKNPU 27700000.npu: l=15000 h=2147483647 hyst=5000 l_limit=0 h_limit=0 h_table=0
+[    4.901638] RKNPU 27700000.npu: RKNPU: nbuf region: [0x000000003fe80000, 0x000000003ff80000), nbuf size: 0x100000

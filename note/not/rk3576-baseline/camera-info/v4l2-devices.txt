@@ -1,0 +1,25 @@
+Failed to open /dev/video0: No such device
+rkisp-statistics (platform: rkisp):
+	/dev/video17
+	/dev/video18
+
+rkcif-mipi-lvds (platform:rkcif-mipi-lvds):
+	/dev/media0
+
+rkisp_mainpath (platform:rkisp-vir0):
+	/dev/video11
+	/dev/video12
+	/dev/video13
+	/dev/video14
+	/dev/video15
+	/dev/video16
+	/dev/video19
+	/dev/media1
+
+rkvpss_scale0 (platform:rkvpss-vir0):
+	/dev/video21
+	/dev/video22
+	/dev/video23
+	/dev/video24
+	/dev/media2
+

@@ -1,0 +1,17 @@
+ioctl: VIDIOC_ENUM_FMT
+	Type: Video Capture Multiplanar
+
+	[0]: 'UYVY' (UYVY 4:2:2)
+		Size: Discrete 800x600
+	[1]: 'NV16' (Y/UV 4:2:2)
+		Size: Discrete 800x600
+	[2]: 'NV61' (Y/VU 4:2:2)
+		Size: Discrete 800x600
+	[3]: 'NV21' (Y/VU 4:2:0)
+		Size: Discrete 800x600
+	[4]: 'NV12' (Y/UV 4:2:0)
+		Size: Discrete 800x600
+	[5]: 'NM21' (Y/VU 4:2:0 (N-C))
+		Size: Discrete 800x600
+	[6]: 'NM12' (Y/UV 4:2:0 (N-C))
+		Size: Discrete 800x600

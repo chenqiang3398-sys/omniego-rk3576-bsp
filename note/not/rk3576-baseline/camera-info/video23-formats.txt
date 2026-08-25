@@ -1,0 +1,10 @@
+ioctl: VIDIOC_ENUM_FMT
+	Type: Video Capture Multiplanar
+
+	[0]: 'NV16' (Y/UV 4:2:2)
+	[1]: 'NV12' (Y/UV 4:2:0)
+	[2]: 'GREY' (8-bit Greyscale)
+	[3]: 'UYVY' (UYVY 4:2:2)
+	[4]: 'NV61' (Y/VU 4:2:2)
+	[5]: 'NV21' (Y/VU 4:2:0)
+	[6]: 'VYUY' (VYUY 4:2:2)

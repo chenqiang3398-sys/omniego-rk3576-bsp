@@ -1,0 +1,45 @@
+[    1.816723] OF: fdt: Reserved memory: failed to reserve memory for node 'drm-cubic-lut@0': base 0x0000000000000000, size 0 MiB
+[    4.831563] rockchip-vop2 27d00000.vop: [drm:vop2_bind] vp0 assign plane mask: Esmart0[0x4], primary plane phy id: Esmart0[2]
+[    4.831586] rockchip-vop2 27d00000.vop: [drm:vop2_bind] vp1 assign plane mask: Esmart1[0x8], primary plane phy id: Esmart1[3]
+[    4.831600] rockchip-vop2 27d00000.vop: [drm:vop2_bind] vp2 assign plane mask: Esmart2[0x100], primary plane phy id: Esmart2[8]
+[    4.831912] [drm] unsupported AFBC format NV12 little-endian (0x3231564e)
+[    4.831977] [drm] failed to init overlay plane Cluster0-win1
+[    4.832040] [drm] failed to init overlay plane Cluster1-win1
+[    4.836857] rockchip-drm display-subsystem: bound 27d00000.vop (ops 0xffffffc0094d9568)
+[    4.838662] rockchip-drm display-subsystem: bound 27da0000.hdmi (ops 0xffffffc0094f2800)
+[    4.838737] rockchip-drm display-subsystem: bound 27d80000.dsi (ops 0xffffffc0094f51b8)
+[    4.839144] rockchip-drm display-subsystem: bound 27e40000.dp (ops 0xffffffc0094f5810)
+[    4.840879] [drm] Initialized rockchip 4.0.0 20140818 for display-subsystem on minor 0
+[    4.841395] rockchip-drm display-subsystem: route-hdmi: failed to get logo,offset
+[    4.841408] rockchip-drm display-subsystem: route-dp0: failed to get logo,offset
+[    4.850412] rockchip-drm display-subsystem: [drm] run display error_event monitor
+[    4.851226] mali 27800000.gpu: Kernel DDK version g25p0-00eac0
+[    4.851413] mali 27800000.gpu: GPU metrics tracepoint support enabled
+[    4.852477] mali 27800000.gpu: bin=0
+[    4.852658] mali 27800000.gpu: leakage=8
+[    4.852685] debugfs: Directory '27800000.gpu-mali' with parent 'vdd_gpu_s0' already present!
+[    4.854409] mali 27800000.gpu: pvtm=815
+[    4.854924] mali 27800000.gpu: pvtm-volt-sel=6
+[    4.854940] mali 27800000.gpu: soc version=0, speed=6
+[    4.854981] debugfs: Directory '27800000.gpu-mali' with parent 'vdd_gpu_s0' already present!
+[    4.855711] mali 27800000.gpu: avs=0
+[    4.855741] W : [File] : drivers/gpu/arm/bifrost/platform/rk/mali_kbase_config_rk.c; [Line] : 144; [Func] : kbase_platform_rk_init(); power-off-delay-ms not available.
+[    4.856496] mali 27800000.gpu: Register LUT 00070200 initialized for GPU arch 0x00070400
+[    4.856516] mali 27800000.gpu: GPU identified as 0x2 arch 7.4.0 r1p0 status 0
+[    4.856630] mali 27800000.gpu: No priority control manager is configured
+[    4.856638] mali 27800000.gpu: Large page allocation set to false after hardware feature check
+[    4.856866] mali 27800000.gpu: No memory group manager is configured
+[    4.857377] mali 27800000.gpu: EM: OPP:600000 is inefficient
+[    4.857384] mali 27800000.gpu: EM: OPP:500000 is inefficient
+[    4.857387] mali 27800000.gpu: EM: OPP:400000 is inefficient
+[    4.857391] mali 27800000.gpu: EM: OPP:300000 is inefficient
+[    4.857490] mali 27800000.gpu: EM: created perf domain
+[    4.857794] mali 27800000.gpu: l=15000 h=2147483647 hyst=5000 l_limit=0 h_limit=0 h_table=0
+[    4.859215] mali 27800000.gpu: * MALI kbase_mmap_min_addr compiled to CONFIG_DEFAULT_MMAP_MIN_ADDR, no runtime update possible! *
+[    4.859231] mali 27800000.gpu: Probed as mali0
+[    4.894000] [drm] Initialized rknpu 0.9.8 20240828 for 27700000.npu on minor 1
+[    4.910419] I : [File] : drivers/gpu/arm/mali400/mali/linux/mali_kernel_linux.c; [Line] : 407; [Func] : mali_module_init(); svn_rev_string_from_arm of this mali_ko is '', rk_ko_ver is '5', built at '23:08:49', on 'Sep 26 2025'.
+[    4.911031] Mali: 
+[    4.911034] Mali device driver loaded
+[   11.045794] mali 27800000.gpu: Clearing BASE_MEM_UNCACHED_GPU flag to avoid MMA violation
+[   13.879384] Freeing drm_logo memory: 5296K

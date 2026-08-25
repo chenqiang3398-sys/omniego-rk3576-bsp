@@ -1,0 +1,277 @@
+EGL client extensions string:
+    EGL_EXT_client_extensions EGL_EXT_platform_base
+    EGL_KHR_client_get_all_proc_addresses EGL_KHR_platform_x11
+    EGL_EXT_platform_x11 EGL_KHR_platform_gbm EGL_KHR_platform_wayland
+    EGL_EXT_platform_wayland
+
+GBM platform:
+arm_release_ver: g24p0-00eac0, rk_so_ver: 7
+EGL API version: 1.5
+EGL vendor string: ARM
+EGL version string: 1.5 Bifrost-"g24p0-00eac0"
+EGL client APIs: OpenGL_ES
+EGL extensions string:
+    EGL_WL_bind_wayland_display EGL_NV_context_priority_realtime
+    EGL_KHR_partial_update EGL_KHR_config_attribs EGL_KHR_image
+    EGL_KHR_image_base EGL_KHR_fence_sync EGL_KHR_wait_sync
+    EGL_KHR_gl_colorspace EGL_KHR_get_all_proc_addresses
+    EGL_IMG_context_priority EGL_KHR_no_config_context
+    EGL_EXT_image_dma_buf_import EGL_EXT_image_dma_buf_import_modifiers
+    EGL_EXT_yuv_surface EGL_EXT_pixel_format_float
+    EGL_ARM_pixmap_multisample_discard EGL_ANDROID_native_fence_sync
+    EGL_KHR_gl_texture_2D_image EGL_KHR_gl_texture_3D_image
+    EGL_KHR_gl_renderbuffer_image EGL_KHR_create_context
+    EGL_KHR_surfaceless_context EGL_KHR_gl_texture_cubemap_image
+    EGL_EXT_image_gl_colorspace EGL_EXT_create_context_robustness
+Configurations:
+     bf lv colorbuffer dp st  ms    vis   cav bi  renderable  supported
+  id sz  l  r  g  b  a th cl ns b    id   eat nd gl es es2 vg surfaces 
+---------------------------------------------------------------------
+
+Wayland platform:
+arm_release_ver: g24p0-00eac0, rk_so_ver: 7
+eglinfo: eglInitialize failed
+
+X11 platform:
+arm_release_ver: g24p0-00eac0, rk_so_ver: 7
+EGL API version: 1.5
+EGL vendor string: ARM
+EGL version string: 1.5 Bifrost-"g24p0-00eac0"
+EGL client APIs: OpenGL_ES
+EGL extensions string:
+    EGL_WL_bind_wayland_display EGL_NV_context_priority_realtime
+    EGL_KHR_image_pixmap EGL_KHR_partial_update
+    EGL_EXT_image_dma_buf_import EGL_KHR_config_attribs EGL_KHR_image
+    EGL_KHR_image_base EGL_KHR_fence_sync EGL_KHR_wait_sync
+    EGL_KHR_gl_colorspace EGL_KHR_get_all_proc_addresses
+    EGL_IMG_context_priority EGL_KHR_no_config_context
+    EGL_EXT_image_dma_buf_import EGL_EXT_image_dma_buf_import_modifiers
+    EGL_EXT_yuv_surface EGL_EXT_pixel_format_float
+    EGL_ARM_pixmap_multisample_discard EGL_ANDROID_native_fence_sync
+    EGL_KHR_gl_texture_2D_image EGL_KHR_gl_texture_3D_image
+    EGL_KHR_gl_renderbuffer_image EGL_KHR_create_context
+    EGL_KHR_surfaceless_context EGL_KHR_gl_texture_cubemap_image
+    EGL_EXT_image_gl_colorspace EGL_EXT_create_context_robustness
+Configurations:
+     bf lv colorbuffer dp st  ms    vis   cav bi  renderable  supported
+  id sz  l  r  g  b  a th cl ns b    id   eat nd gl es es2 vg surfaces 
+---------------------------------------------------------------------
+0x01 32  0  8  8  8  8 24  0  0 0 0x21SG      a     y  y     win,pb,pix
+0x02 32  0  8  8  8  8 24  0  0 0 0x412SG      a     y  y     win,pb,pix
+0x03 32  0  8  8  8  8 24  0  0 0 0x413SG      a     y  y     win,pb,pix
+0x04 32  0  8  8  8  8 24  0  0 0 0x414SG      a     y  y     win,pb,pix
+0x05 32  0  8  8  8  8 24  0  0 0 0x415SG      a     y  y     win,pb,pix
+0x06 32  0  8  8  8  8 24  0  0 0 0x416SG      a     y  y     win,pb,pix
+0x07 32  0  8  8  8  8 24  0  0 0 0x417SG      a     y  y     win,pb,pix
+0x08 32  0  8  8  8  8 24  0  0 0 0x418SG      a     y  y     win,pb,pix
+0x09 32  0  8  8  8  8 24  0  0 0 0x419SG      a     y  y     win,pb,pix
+0x0a 32  0  8  8  8  8 24  0  0 0 0x41aSG      a     y  y     win,pb,pix
+0x0b 32  0  8  8  8  8 24  0  0 0 0x41bSG      a     y  y     win,pb,pix
+0x0c 32  0  8  8  8  8 24  0  0 0 0x41cSG      a     y  y     win,pb,pix
+0x0d 32  0  8  8  8  8 24  0  0 0 0x41dSG      a     y  y     win,pb,pix
+0x0e 32  0  8  8  8  8 24  0  0 0 0x41eSG      a     y  y     win,pb,pix
+0x0f 32  0  8  8  8  8 24  0  0 0 0x41fSG      a     y  y     win,pb,pix
+0x10 32  0  8  8  8  8 24  0  0 0 0x420SG      a     y  y     win,pb,pix
+0x11 32  0  8  8  8  8 24  0  0 0 0x421SG      a     y  y     win,pb,pix
+0x12 32  0  8  8  8  8 24  0  0 0 0x422SG      a     y  y     win,pb,pix
+0x13 32  0  8  8  8  8 24  0  0 0 0x423SG      a     y  y     win,pb,pix
+0x14 32  0  8  8  8  8 24  0  0 0 0x424SG      a     y  y     win,pb,pix
+0x15 32  0  8  8  8  8 24  0  0 0 0x425SG      a     y  y     win,pb,pix
+0x16 32  0  8  8  8  8 24  0  0 0 0x426SG      a     y  y     win,pb,pix
+0x17 32  0  8  8  8  8 24  0  0 0 0x427SG      a     y  y     win,pb,pix
+0x18 32  0  8  8  8  8 24  0  0 0 0x428SG      a     y  y     win,pb,pix
+0x19 32  0  8  8  8  8 24  0  0 0 0x429SG      a     y  y     win,pb,pix
+0x1a 32  0  8  8  8  8 24  0  0 0 0x42aSG      a     y  y     win,pb,pix
+0x1b 32  0  8  8  8  8 24  0  0 0 0x42bSG      a     y  y     win,pb,pix
+0x1c 32  0  8  8  8  8 24  0  0 0 0x42cSG      a     y  y     win,pb,pix
+0x1d 32  0  8  8  8  8 24  0  0 0 0x42dSG      a     y  y     win,pb,pix
+0x1e 32  0  8  8  8  8 24  0  0 0 0x42eSG      a     y  y     win,pb,pix
+0x1f 32  0  8  8  8  8 24  0  0 0 0x42fSG      a     y  y     win,pb,pix
+0x20 32  0  8  8  8  8 24  0  0 0 0x430SG      a     y  y     win,pb,pix
+0x21 32  0  8  8  8  8 24  0  0 0 0x431SG      a     y  y     win,pb,pix
+0x22 32  0  8  8  8  8 24  0  0 0 0x432SG      a     y  y     win,pb,pix
+0x23 32  0  8  8  8  8 24  0  0 0 0x433SG      a     y  y     win,pb,pix
+0x24 32  0  8  8  8  8 24  0  0 0 0x434SG      a     y  y     win,pb,pix
+0x25 32  0  8  8  8  8 24  0  0 0 0x435SG      a     y  y     win,pb,pix
+0x26 32  0  8  8  8  8 24  0  0 0 0x436SG      a     y  y     win,pb,pix
+0x27 32  0  8  8  8  8 24  0  0 0 0x437SG      a     y  y     win,pb,pix
+0x28 32  0  8  8  8  8 24  0  0 0 0x438SG      a     y  y     win,pb,pix
+0x29 32  0  8  8  8  8 24  0  0 0 0x439SG      a     y  y     win,pb,pix
+0x2a 32  0  8  8  8  8 24  0  0 0 0x43aSG      a     y  y     win,pb,pix
+0x2b 32  0  8  8  8  8 24  0  0 0 0x43bSG      a     y  y     win,pb,pix
+0x2c 32  0  8  8  8  8 24  0  0 0 0x43cSG      a     y  y     win,pb,pix
+0x2d 32  0  8  8  8  8 24  0  0 0 0x43dSG      a     y  y     win,pb,pix
+0x2e 32  0  8  8  8  8 24  0  0 0 0x43eSG      a     y  y     win,pb,pix
+0x2f 32  0  8  8  8  8 24  0  0 0 0x43fSG      a     y  y     win,pb,pix
+0x30 32  0  8  8  8  8 24  0  0 0 0x440SG      a     y  y     win,pb,pix
+0x31 32  0  8  8  8  8 24  0  0 0 0x441SG      a     y  y     win,pb,pix
+0x32 32  0  8  8  8  8 24  0  0 0 0x442SG      a     y  y     win,pb,pix
+0x33 32  0  8  8  8  8 24  0  0 0 0x443SG      a     y  y     win,pb,pix
+0x34 32  0  8  8  8  8 24  0  0 0 0x444SG      a     y  y     win,pb,pix
+0x35 32  0  8  8  8  8 24  0  0 0 0x445SG      a     y  y     win,pb,pix
+0x36 32  0  8  8  8  8 24  0  0 0 0x446SG      a     y  y     win,pb,pix
+0x37 32  0  8  8  8  8 24  0  0 0 0x447SG      a     y  y     win,pb,pix
+0x38 32  0  8  8  8  8 24  0  0 0 0x448SG      a     y  y     win,pb,pix
+0x39 32  0  8  8  8  8 24  0  0 0 0x449SG      a     y  y     win,pb,pix
+0x3a 32  0  8  8  8  8 24  0  0 0 0x44aSG      a     y  y     win,pb,pix
+0x3b 32  0  8  8  8  8 24  0  0 0 0x44bSG      a     y  y     win,pb,pix
+0x3c 32  0  8  8  8  8 24  0  0 0 0x44cSG      a     y  y     win,pb,pix
+0x3d 32  0  8  8  8  8 24  0  0 0 0x44dSG      a     y  y     win,pb,pix
+0x3e 32  0  8  8  8  8 24  0  0 0 0x44eSG      a     y  y     win,pb,pix
+0x3f 32  0  8  8  8  8 24  0  0 0 0x44fSG      a     y  y     win,pb,pix
+0x40 32  0  8  8  8  8 24  0  0 0 0x450SG      a     y  y     win,pb,pix
+0x41 32  0  8  8  8  8 24  0  0 0 0x451SG      a     y  y     win,pb,pix
+0x42 32  0  8  8  8  8 24  0  0 0 0x452SG      a     y  y     win,pb,pix
+0x43 32  0  8  8  8  8 24  0  0 0 0x453SG      a     y  y     win,pb,pix
+0x44 32  0  8  8  8  8 24  0  0 0 0x454SG      a     y  y     win,pb,pix
+0x45 32  0  8  8  8  8 24  0  0 0 0x455SG      a     y  y     win,pb,pix
+0x46 32  0  8  8  8  8 24  0  0 0 0x456SG      a     y  y     win,pb,pix
+0x47 32  0  8  8  8  8 24  0  0 0 0x457SG      a     y  y     win,pb,pix
+0x48 32  0  8  8  8  8 24  0  0 0 0x458SG      a     y  y     win,pb,pix
+0x49 32  0  8  8  8  8 24  0  0 0 0x459SG      a     y  y     win,pb,pix
+0x4a 32  0  8  8  8  8 24  0  0 0 0x45aSG      a     y  y     win,pb,pix
+0x4b 32  0  8  8  8  8 24  0  0 0 0x45bSG      a     y  y     win,pb,pix
+0x4c 32  0  8  8  8  8 24  0  0 0 0x45cSG      a     y  y     win,pb,pix
+0x4d 32  0  8  8  8  8 24  0  0 0 0x45dSG      a     y  y     win,pb,pix
+0x4e 32  0  8  8  8  8 24  0  0 0 0x45eSG      a     y  y     win,pb,pix
+0x4f 32  0  8  8  8  8 24  0  0 0 0x45fSG      a     y  y     win,pb,pix
+0x50 32  0  8  8  8  8 24  0  0 0 0x460SG      a     y  y     win,pb,pix
+0x51 32  0  8  8  8  8 24  0  0 0 0x461SG      a     y  y     win,pb,pix
+0x52 32  0  8  8  8  8 24  0  0 0 0x462SG      a     y  y     win,pb,pix
+0x53 32  0  8  8  8  8 24  0  0 0 0x463SG      a     y  y     win,pb,pix
+0x54 32  0  8  8  8  8 24  0  0 0 0x464SG      a     y  y     win,pb,pix
+0x55 32  0  8  8  8  8 24  0  0 0 0x465SG      a     y  y     win,pb,pix
+0x56 32  0  8  8  8  8 24  0  0 0 0x466SG      a     y  y     win,pb,pix
+0x57 32  0  8  8  8  8 24  0  0 0 0x467SG      a     y  y     win,pb,pix
+0x58 32  0  8  8  8  8 24  0  0 0 0x468SG      a     y  y     win,pb,pix
+0x59 32  0  8  8  8  8 24  0  0 0 0x469SG      a     y  y     win,pb,pix
+0x5a 32  0  8  8  8  8 24  0  0 0 0x46aSG      a     y  y     win,pb,pix
+0x5b 32  0  8  8  8  8 24  0  0 0 0x46bSG      a     y  y     win,pb,pix
+0x5c 32  0  8  8  8  8 24  0  0 0 0x46cSG      a     y  y     win,pb,pix
+0x5d 32  0  8  8  8  8 24  0  0 0 0x46dSG      a     y  y     win,pb,pix
+0x5e 32  0  8  8  8  8 24  0  0 0 0x46eSG      a     y  y     win,pb,pix
+0x5f 32  0  8  8  8  8 24  0  0 0 0x46fSG      a     y  y     win,pb,pix
+0x60 32  0  8  8  8  8 24  0  0 0 0x470SG      a     y  y     win,pb,pix
+0x61 32  0  8  8  8  8 24  0  0 0 0x471SG      a     y  y     win,pb,pix
+0x62 32  0  8  8  8  8 24  0  0 0 0x472SG      a     y  y     win,pb,pix
+0x63 32  0  8  8  8  8 24  0  0 0 0x473SG      a     y  y     win,pb,pix
+0x64 32  0  8  8  8  8 24  0  0 0 0x474SG      a     y  y     win,pb,pix
+0x65 32  0  8  8  8  8 24  0  0 0 0x475SG      a     y  y     win,pb,pix
+0x66 32  0  8  8  8  8 24  0  0 0 0x476SG      a     y  y     win,pb,pix
+0x67 32  0  8  8  8  8 24  0  0 0 0x477SG      a     y  y     win,pb,pix
+0x68 32  0  8  8  8  8 24  0  0 0 0x478SG      a     y  y     win,pb,pix
+0x69 32  0  8  8  8  8 24  0  0 0 0x479SG      a     y  y     win,pb,pix
+0x6a 32  0  8  8  8  8 24  0  0 0 0x47aSG      a     y  y     win,pb,pix
+0x6b 32  0  8  8  8  8 24  0  0 0 0x47bSG      a     y  y     win,pb,pix
+0x6c 32  0  8  8  8  8 24  0  0 0 0x47cSG      a     y  y     win,pb,pix
+0x6d 32  0  8  8  8  8 24  0  0 0 0x47dSG      a     y  y     win,pb,pix
+0x6e 32  0  8  8  8  8 24  0  0 0 0x47eSG      a     y  y     win,pb,pix
+0x6f 32  0  8  8  8  8 24  0  0 0 0x47fSG      a     y  y     win,pb,pix
+0x70 32  0  8  8  8  8 24  0  0 0 0x480SG      a     y  y     win,pb,pix
+0x71 32  0  8  8  8  8 24  0  0 0 0x481SG      a     y  y     win,pb,pix
+0x72 32  0  8  8  8  8 24  0  0 0 0x482SG      a     y  y     win,pb,pix
+0x73 32  0  8  8  8  8 24  0  0 0 0x483SG      a     y  y     win,pb,pix
+0x74 32  0  8  8  8  8 24  0  0 0 0x484SG      a     y  y     win,pb,pix
+0x75 32  0  8  8  8  8 24  0  0 0 0x485SG      a     y  y     win,pb,pix
+0x76 32  0  8  8  8  8 24  0  0 0 0x486SG      a     y  y     win,pb,pix
+0x77 32  0  8  8  8  8 24  0  0 0 0x487SG      a     y  y     win,pb,pix
+0x78 32  0  8  8  8  8 24  0  0 0 0x488SG      a     y  y     win,pb,pix
+0x79 32  0  8  8  8  8 24  0  0 0 0x489SG      a     y  y     win,pb,pix
+0x7a 32  0  8  8  8  8 24  0  0 0 0x48aSG      a     y  y     win,pb,pix
+0x7b 32  0  8  8  8  8 24  0  0 0 0x48bSG      a     y  y     win,pb,pix
+0x7c 32  0  8  8  8  8 24  0  0 0 0x48cSG      a     y  y     win,pb,pix
+0x7d 32  0  8  8  8  8 24  0  0 0 0x48dSG      a     y  y     win,pb,pix
+0x7e 32  0  8  8  8  8 24  0  0 0 0x48eSG      a     y  y     win,pb,pix
+0x7f 32  0  8  8  8  8 24  0  0 0 0x48fSG      a     y  y     win,pb,pix
+0x80 32  0  8  8  8  8 24  0  0 0 0x490SG      a     y  y     win,pb,pix
+0x81 32  0  8  8  8  8 24  0  0 0 0x491SG      a     y  y     win,pb,pix
+0x82 32  0  8  8  8  8 24  0  0 0 0x492SG      a     y  y     win,pb,pix
+0x83 32  0  8  8  8  8 24  0  0 0 0x493SG      a     y  y     win,pb,pix
+0x84 32  0  8  8  8  8 24  0  0 0 0x494SG      a     y  y     win,pb,pix
+0x85 32  0  8  8  8  8 24  0  0 0 0x495SG      a     y  y     win,pb,pix
+0x86 32  0  8  8  8  8 24  0  0 0 0x496SG      a     y  y     win,pb,pix
+0x87 32  0  8  8  8  8 24  0  0 0 0x497SG      a     y  y     win,pb,pix
+0x88 32  0  8  8  8  8 24  0  0 0 0x498SG      a     y  y     win,pb,pix
+0x89 32  0  8  8  8  8 24  0  0 0 0x499SG      a     y  y     win,pb,pix
+0x8a 32  0  8  8  8  8 24  0  0 0 0x49aSG      a     y  y     win,pb,pix
+0x8b 32  0  8  8  8  8 24  0  0 0 0x49bSG      a     y  y     win,pb,pix
+0x8c 32  0  8  8  8  8 24  0  0 0 0x49cSG      a     y  y     win,pb,pix
+0x8d 32  0  8  8  8  8 24  0  0 0 0x49dSG      a     y  y     win,pb,pix
+0x8e 32  0  8  8  8  8 24  0  0 0 0x49eSG      a     y  y     win,pb,pix
+0x8f 32  0  8  8  8  8 24  0  0 0 0x49fSG      a     y  y     win,pb,pix
+0x90 32  0  8  8  8  8 24  0  0 0 0x4a0SG      a     y  y     win,pb,pix
+0x91 32  0  8  8  8  8 24  0  0 0 0x4a1SG      a     y  y     win,pb,pix
+0x92 32  0  8  8  8  8 24  0  0 0 0x4a2SG      a     y  y     win,pb,pix
+0x93 32  0  8  8  8  8 24  0  0 0 0x4a3SG      a     y  y     win,pb,pix
+0x94 32  0  8  8  8  8 24  0  0 0 0x4a4SG      a     y  y     win,pb,pix
+0x95 32  0  8  8  8  8 24  0  0 0 0x4a5SG      a     y  y     win,pb,pix
+0x96 32  0  8  8  8  8 24  0  0 0 0x4a6SG      a     y  y     win,pb,pix
+0x97 32  0  8  8  8  8 24  0  0 0 0x4a7SG      a     y  y     win,pb,pix
+0x98 32  0  8  8  8  8 24  0  0 0 0x4a8SG      a     y  y     win,pb,pix
+0x99 32  0  8  8  8  8 24  0  0 0 0x4a9SG      a     y  y     win,pb,pix
+0x9a 32  0  8  8  8  8 24  0  0 0 0x4aaSG      a     y  y     win,pb,pix
+0x9b 32  0  8  8  8  8 24  0  0 0 0x4abSG      a     y  y     win,pb,pix
+0x9c 32  0  8  8  8  8 24  0  0 0 0x4acSG      a     y  y     win,pb,pix
+0x9d 32  0  8  8  8  8 24  0  0 0 0x4adSG      a     y  y     win,pb,pix
+0x9e 32  0  8  8  8  8 24  0  0 0 0x4aeSG      a     y  y     win,pb,pix
+0x9f 32  0  8  8  8  8 24  0  0 0 0x4afSG      a     y  y     win,pb,pix
+0xa0 32  0  8  8  8  8 24  0  0 0 0x4b0SG      a     y  y     win,pb,pix
+0xa1 32  0  8  8  8  8 24  0  0 0 0x4b1SG      a     y  y     win,pb,pix
+0xa2 32  0  8  8  8  8 24  0  0 0 0x4b2SG      a     y  y     win,pb,pix
+0xa3 32  0  8  8  8  8 24  0  0 0 0x4b3SG      a     y  y     win,pb,pix
+0xa4 32  0  8  8  8  8 24  0  0 0 0x4b4SG      a     y  y     win,pb,pix
+0xa5 32  0  8  8  8  8 24  0  0 0 0x4b5SG      a     y  y     win,pb,pix
+0xa6 32  0  8  8  8  8 24  0  0 0 0x4b6SG      a     y  y     win,pb,pix
+0xa7 32  0  8  8  8  8 24  0  0 0 0x4b7SG      a     y  y     win,pb,pix
+0xa8 32  0  8  8  8  8 24  0  0 0 0x4b8SG      a     y  y     win,pb,pix
+0xa9 32  0  8  8  8  8 24  0  0 0 0x4b9SG      a     y  y     win,pb,pix
+0xaa 32  0  8  8  8  8 24  0  0 0 0x4baSG      a     y  y     win,pb,pix
+0xab 32  0  8  8  8  8 24  0  0 0 0x4bbSG      a     y  y     win,pb,pix
+0xac 32  0  8  8  8  8 24  0  0 0 0x4bcSG      a     y  y     win,pb,pix
+0xad 32  0  8  8  8  8 24  0  0 0 0x4bdSG      a     y  y     win,pb,pix
+0xae 32  0  8  8  8  8 24  0  0 0 0x4beSG      a     y  y     win,pb,pix
+0xaf 32  0  8  8  8  8 24  0  0 0 0x4bfSG      a     y  y     win,pb,pix
+0xb0 32  0  8  8  8  8 24  0  0 0 0x4c0SG      a     y  y     win,pb,pix
+0xb1 32  0  8  8  8  8 24  0  0 0 0x4c1SG      a     y  y     win,pb,pix
+0xb2 32  0  8  8  8  8 24  0  0 0 0x4c2SG      a     y  y     win,pb,pix
+0xb3 32  0  8  8  8  8 24  0  0 0 0x4c3SG      a     y  y     win,pb,pix
+0xb4 32  0  8  8  8  8 24  0  0 0 0x4c4SG      a     y  y     win,pb,pix
+0xb5 32  0  8  8  8  8  0  0  0 0 0xc9SG      a     y  y     win,pb,pix
+0xb6 32  0  8  8  8  8 24  0  0 0 0xc9SG      a     y  y     win,pb,pix
+0xb7 32  0  8  8  8  8 24  8  0 0 0xc9SG      a     y  y     win,pb,pix
+0xb8 32  0  8  8  8  8 24  8  4 1 0xc9SG      a     y  y     win,pb,pix
+0xb9 32  0  8  8  8  8 24  8  8 1 0xc9SG      a     y  y     win,pb,pix
+0xba 32  0  8  8  8  8 24  8 16 1 0xc9SG      a     y  y     win,pb,pix
+0xbb 24  0  8  8  8  0  0  0  0 0 0x21SG      y     y  y     win,pb,pix
+0xbc 24  0  8  8  8  0  0  0  4 1 0x21SG      y     y  y     win,pb,pix
+0xbd 24  0  8  8  8  0 24  0  0 0 0x21SG      y     y  y     win,pb,pix
+0xbe 24  0  8  8  8  0 24  8  0 0 0x21SG      y     y  y     win,pb,pix
+0xbf 24  0  8  8  8  0 24  8  4 1 0x21SG      y     y  y     win,pb,pix
+0xc0 24  0  8  8  8  0 24  8  8 1 0x21SG      y     y  y     win,pb,pix
+0xc1 24  0  8  8  8  0 24  8 16 1 0x21SG      y     y  y     win,pb,pix
+0xc2 16  0  5  6  5  0  0  0  0 0 0x00SG      y     y  y     win,pb,pix
+0xc3 16  0  5  6  5  0 24  0  0 0 0x00SG      y     y  y     win,pb,pix
+0xc4 16  0  5  6  5  0 24  8  0 0 0x00SG      y     y  y     win,pb,pix
+0xc5 16  0  5  6  5  0 24  8  4 1 0x00SG      y     y  y     win,pb,pix
+0xc6 16  0  5  6  5  0 24  8  8 1 0x00SG      y     y  y     win,pb,pix
+0xc7 16  0  5  6  5  0 24  8 16 1 0x00SG      y     y  y     win,pb,pix
+0xc8 16  0  5  5  5  1 24  8  0 0 0x00SG      a     y  y     win,pb,pix
+0xc9 16  0  5  5  5  1 24  8  4 1 0x00SG      a     y  y     win,pb,pix
+0xca 16  0  4  4  4  4 24  8  0 0 0x00SG      a     y  y     win,pb,pix
+0xcb 16  0  4  4  4  4 24  8  4 1 0x00SG      a     y  y     win,pb,pix
+0xcc 64  0 16 16 16 16 24  8  0 0 0x00SG            y  y     win,pb
+0xcd 32  0 10 10 10  2 24  8  0 0 0x00SG      a     y  y     win,pb
+0xce  8  0  0  0  0  8  0  0  0 0 0x00SG               y     win
+0xcf 10  0  0  0  0  0  0  0  0 0 0x00SG               y     win
+0xd0  8  0  0  0  0  0  0  0  0 0 0x00SG               y     win
+0xd1 10  0  0  0  0  2  0  0  0 0 0x00SG               y     win
+0xd2 10  0  0  0  0  0  0  0  0 0 0x00SG               y     win
+0xd3  8  0  0  0  0  0  0  0  0 0 0x00SG               y     win
+0xd4  8  0  0  0  0  0  0  0  0 0 0x00SG               y     win
+0xd5  8  0  0  0  0  0  0  0  0 0 0x00SG               y     win
+0xd6  8  0  0  0  0  0  0  0  0 0 0x00SG               y     win
+0xd7 10  0  0  0  0  0  0  0  0 0 0x00SG               y     win
+0xd8  8  0  0  0  0  0  0  0  0 0 0x00SG               y     win
+0xd9  8  0  0  0  0  0  0  0  0 0 0x00SG               y     win
+0xda 10  0  0  0  0  1  0  0  0 0 0x00SG               y     win
+

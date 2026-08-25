@@ -1,0 +1,45 @@
+Driver Info:
+	Driver name      : rkisp_v10
+	Card type        : rkisp_rawrd2_s
+	Bus info         : platform:rkisp-vir0
+	Driver version   : 2.9.0
+	Capabilities     : 0x84202000
+		Video Output Multiplanar
+		Streaming
+		Extended Pix Format
+		Device Capabilities
+	Device Caps      : 0x04202000
+		Video Output Multiplanar
+		Streaming
+		Extended Pix Format
+Media Driver Info:
+	Driver name      : rkisp-vir0
+	Model            : rkisp0
+	Serial           : 
+	Bus info         : platform:rkisp-vir0
+	Media version    : 6.1.99
+	Hardware revision: 0x00000000 (0)
+	Driver version   : 6.1.99
+Interface Info:
+	ID               : 0x03000025
+	Type             : V4L Video
+Entity Info:
+	ID               : 0x00000024 (36)
+	Name             : rkisp_rawrd2_s
+	Function         : V4L2 I/O
+	Pad 0x01000027   : 0: Source
+	  Link 0x02000028: to remote pad 0x1000002 of entity 'rkisp-isp-subdev' (Unknown V4L2 Sub-Device): Data
+Priority: 2
+Format Video Output Multiplanar:
+	Width/Height      : 800/600
+	Pixel Format      : 'RGGB' (8-bit Bayer RGRG/GBGB)
+	Field             : None
+	Number of planes  : 1
+	Flags             : 
+	Colorspace        : Default
+	Transfer Function : Default
+	YCbCr/HSV Encoding: Default
+	Quantization      : Full Range
+	Plane 0           :
+	   Bytes per Line : 1024
+	   Size Image     : 614400

@@ -1,0 +1,4 @@
+Module                  Size  Used by
+aic_btusb              57344  0
+aic8800_fdrv          438272  0
+aic_load_fw            61440  1 aic8800_fdrv

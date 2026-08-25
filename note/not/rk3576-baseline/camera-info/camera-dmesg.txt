@@ -1,0 +1,297 @@
+[    2.115905] platform csi2-dcphy0: Fixed dependency cycle(s) with /mipi0-csi2
+[    2.116581] platform mipi0-csi2: Fixed dependency cycle(s) with /csi2-dcphy0
+[    2.117540] platform mipi0-csi2: Fixed dependency cycle(s) with /rkcif-mipi-lvds
+[    2.118244] platform rkcif-mipi-lvds: Fixed dependency cycle(s) with /mipi0-csi2
+[    2.119087] platform rkcif-mipi-lvds-sditf: Fixed dependency cycle(s) with /rkisp-vir0
+[    2.119830] platform rkisp-vir0: Fixed dependency cycle(s) with /rkcif-mipi-lvds-sditf
+[    2.120752] platform rkisp-vir0-sditf: Fixed dependency cycle(s) with /rkvpss-vir0
+[    2.121462] platform rkvpss-vir0: Fixed dependency cycle(s) with /rkisp-vir0-sditf
+[    2.182047] SCSI subsystem initialized
+[    2.555803] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 242)
+[    2.556918] rockchip-csi2-dphy-hw 2b030000.csi2-dphy0-hw: csi2 dphy hw probe successfully!
+[    2.557035] rockchip-csi2-dphy-hw 2b070000.csi2-dphy1-hw: csi2 dphy hw probe successfully!
+[    2.599663] rockchip-pinctrl pinctrl: pin gpio3-21 already requested by vcc-mipicsi1-regulator; cannot claim for 2ad00000.spi
+[    2.979643] platform csi2-dcphy0: Fixed dependency cycle(s) with /i2c@2acb0000/imx415@1a
+[    2.979700] i2c 8-001a: Fixed dependency cycle(s) with /csi2-dcphy0
+[    4.540559] rkcifhw 27c10000.rkcif: Adding to iommu group 9
+[    4.540896] rkcifhw 27c10000.rkcif: No reserved memory region assign to CIF
+[    4.540999] rkcif rkcif-mipi-lvds: Adding to iommu group 9
+[    4.541014] rkcif rkcif-mipi-lvds: rkcif driver version: v00.02.00
+[    4.541089] rkcif rkcif-mipi-lvds: attach to cif hw node
+[    4.541095] rkcif rkcif-mipi-lvds: rkcif wait line 0
+[    4.541100] rkcif rkcif-mipi-lvds: rkcif fastboot reserve bufs num 3
+[    4.541137] : rkcif_update_sensor_info: stream[0] get remote sensor_sd failed!
+[    4.541143] : rkcif_scale_set_fmt: req(40, 30) src out(0, 0)
+[    4.541153] : rkcif_update_sensor_info: stream[0] get remote sensor_sd failed!
+[    4.541158] : rkcif_scale_set_fmt: req(40, 30) src out(0, 0)
+[    4.541168] : rkcif_update_sensor_info: stream[0] get remote sensor_sd failed!
+[    4.541172] : rkcif_scale_set_fmt: req(40, 30) src out(0, 0)
+[    4.541182] : rkcif_update_sensor_info: stream[0] get remote sensor_sd failed!
+[    4.541186] : rkcif_scale_set_fmt: req(40, 30) src out(0, 0)
+[    4.541863] rkcif rkcif-mipi-lvds: No memory-region-thunderboot specified
+[    4.542736] rockchip-mipi-csi2-hw 27c80000.mipi0-csi2-hw: enter mipi csi2 hw probe!
+[    4.542851] rockchip-mipi-csi2-hw 27c80000.mipi0-csi2-hw: probe success, v4l2_dev:mipi0-csi2-hw!
+[    4.542887] rockchip-mipi-csi2-hw 27c90000.mipi1-csi2-hw: enter mipi csi2 hw probe!
+[    4.542953] rockchip-mipi-csi2-hw 27c90000.mipi1-csi2-hw: probe success, v4l2_dev:mipi1-csi2-hw!
+[    4.542986] rockchip-mipi-csi2-hw 27ca0000.mipi2-csi2-hw: enter mipi csi2 hw probe!
+[    4.543055] rockchip-mipi-csi2-hw 27ca0000.mipi2-csi2-hw: probe success, v4l2_dev:mipi2-csi2-hw!
+[    4.543086] rockchip-mipi-csi2-hw 27cb0000.mipi3-csi2-hw: enter mipi csi2 hw probe!
+[    4.543153] rockchip-mipi-csi2-hw 27cb0000.mipi3-csi2-hw: probe success, v4l2_dev:mipi3-csi2-hw!
+[    4.543185] rockchip-mipi-csi2-hw 27cc0000.mipi4-csi2-hw: enter mipi csi2 hw probe!
+[    4.543249] rockchip-mipi-csi2-hw 27cc0000.mipi4-csi2-hw: probe success, v4l2_dev:mipi4-csi2-hw!
+[    4.543650] rockchip-mipi-csi2 mipi0-csi2: attach to csi2 hw node
+[    4.543675] rkcif rkcif-mipi-lvds: Entity type for entity rockchip-mipi-csi2 was not initialized!
+[    4.543683] rockchip-mipi-csi2: Async registered subdev
+[    4.543688] rockchip-mipi-csi2: probe success, v4l2_dev:rkcif-mipi-lvds!
+[    4.544497] rkisp_hw 27c00000.isp: Adding to iommu group 8
+[    4.544638] rkisp_hw 27c00000.isp: is_thunderboot: 0
+[    4.544645] rkisp_hw 27c00000.isp: Missing rockchip,grf property
+[    4.544664] rkisp_hw 27c00000.isp: max input:0x0@0fps
+[    4.544780] rkisp_hw 27c00000.isp: no find phandle sram
+[    4.545037] rkisp rkisp-vir0: rkisp driver version: v02.09.00
+[    4.545116] rkisp rkisp-vir0: No memory-region-thunderboot specified
+[    4.545183] rkisp rkisp-vir0: Entity type for entity rkisp-isp-subdev was not initialized!
+[    4.735362] imx415 8-001a: driver version: 00.01.08
+[    4.735380] imx415 8-001a:  Get hdr mode failed! no hdr default
+[    4.735397] imx415 8-001a: detect imx415 lane 4
+[    4.735549] imx415 8-001a: Failed to get power-gpios
+[    4.735571] imx415 8-001a: could not get default pinstate
+[    4.735580] imx415 8-001a: could not get sleep pinstate
+[    4.735619] imx415 8-001a: supply dvdd not found, using dummy regulator
+[    4.735719] imx415 8-001a: supply dovdd not found, using dummy regulator
+[    4.786868] imx415 8-001a: Unexpected sensor id(000000), ret(-5)
+[    4.824657] rockchip-csi2-dphy csi2-dcphy0: csi2 dphy0 probe successfully!
+[    4.836857] rockchip-drm display-subsystem: bound 27d00000.vop (ops 0xffffffc0094d9568)
+[    4.838662] rockchip-drm display-subsystem: bound 27da0000.hdmi (ops 0xffffffc0094f2800)
+[    4.838737] rockchip-drm display-subsystem: bound 27d80000.dsi (ops 0xffffffc0094f51b8)
+[    4.839144] rockchip-drm display-subsystem: bound 27e40000.dp (ops 0xffffffc0094f5810)
+[    4.840879] [drm] Initialized rockchip 4.0.0 20140818 for display-subsystem on minor 0
+[    4.841395] rockchip-drm display-subsystem: route-hdmi: failed to get logo,offset
+[    4.841408] rockchip-drm display-subsystem: route-dp0: failed to get logo,offset
+[    4.850412] rockchip-drm display-subsystem: [drm] run display error_event monitor
+[    4.874399] rockchip-dmc dmc: fixed_rate(isp|cif0|cif1|dualview) = 2112000000
+[    4.890826] rkcif rkcif-mipi-lvds: clear unready subdev num: 1
+[    4.891378] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[0] get remote terminal sensor failed!
+[    4.891394] rkcif-mipi-lvds: Async subdev notifier completed
+[    4.891406] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[0] get remote terminal sensor failed!
+[    4.891413] rkcif-mipi-lvds: There is not terminal subdev, not synchronized with ISP
+[    4.891489] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[0] get remote terminal sensor failed!
+[    4.891498] rkcif-mipi-lvds: There is not terminal subdev, not synchronized with ISP
+[    4.911198] rkisp rkisp-vir0: clear unready subdev num: 1
+[    4.911548] rkisp-vir0: Async subdev notifier completed
+[    6.210024] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[1] get remote terminal sensor failed!
+[    6.210073] stream_cif_mipi_id1: update sensor info failed -19
+[    6.212143] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[2] get remote terminal sensor failed!
+[    6.212182] rkcif_tools_id2: update sensor info failed -19
+[    6.213630] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[2] get remote terminal sensor failed!
+[    6.213636] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[0] get remote terminal sensor failed!
+[    6.213644] stream_cif_mipi_id2: update sensor info failed -19
+[    6.213683] stream_cif_mipi_id0: update sensor info failed -19
+[    6.215638] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[1] get remote terminal sensor failed!
+[    6.215666] rkcif_scale_ch1: update sensor info failed -19
+[    6.217513] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[0] get remote terminal sensor failed!
+[    6.217539] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[3] get remote terminal sensor failed!
+[    6.217541] rkcif_tools_id0: update sensor info failed -19
+[    6.217558] rkcif_scale_ch3: update sensor info failed -19
+[    6.218137] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[2] get remote terminal sensor failed!
+[    6.218154] rkcif_scale_ch2: update sensor info failed -19
+[    6.219208] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[3] get remote terminal sensor failed!
+[    6.219240] stream_cif_mipi_id3: update sensor info failed -19
+[    6.220832] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[1] get remote terminal sensor failed!
+[    6.220859] rkcif_tools_id1: update sensor info failed -19
+[    6.224455] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[0] get remote terminal sensor failed!
+[    6.224484] rkcif_scale_ch0: update sensor info failed -19
+[   13.970060] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[0] get remote terminal sensor failed!
+[   13.970089] stream_cif_mipi_id0: update sensor info failed -19
+[   13.970201] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[1] get remote terminal sensor failed!
+[   13.970213] stream_cif_mipi_id1: update sensor info failed -19
+[   13.970303] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[2] get remote terminal sensor failed!
+[   13.970316] rkcif_tools_id2: update sensor info failed -19
+[   13.970394] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[2] get remote terminal sensor failed!
+[   13.970405] stream_cif_mipi_id2: update sensor info failed -19
+[   13.970531] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[3] get remote terminal sensor failed!
+[   13.970543] stream_cif_mipi_id3: update sensor info failed -19
+[   13.970635] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[0] get remote terminal sensor failed!
+[   13.970647] rkcif_scale_ch0: update sensor info failed -19
+[   13.970730] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[1] get remote terminal sensor failed!
+[   13.970741] rkcif_scale_ch1: update sensor info failed -19
+[   13.970833] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[2] get remote terminal sensor failed!
+[   13.970844] rkcif_scale_ch2: update sensor info failed -19
+[   13.970918] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[3] get remote terminal sensor failed!
+[   13.970926] rkcif_scale_ch3: update sensor info failed -19
+[   13.971003] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[0] get remote terminal sensor failed!
+[   13.971012] rkcif_tools_id0: update sensor info failed -19
+[   13.971091] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[1] get remote terminal sensor failed!
+[   13.971102] rkcif_tools_id1: update sensor info failed -19
+[   35.767659] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[0] get remote terminal sensor failed!
+[   35.767684] stream_cif_mipi_id0: update sensor info failed -19
+[   35.767836] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[1] get remote terminal sensor failed!
+[   35.767846] stream_cif_mipi_id1: update sensor info failed -19
+[   35.767978] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[2] get remote terminal sensor failed!
+[   35.767987] rkcif_tools_id2: update sensor info failed -19
+[   35.768106] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[2] get remote terminal sensor failed!
+[   35.768115] stream_cif_mipi_id2: update sensor info failed -19
+[   35.768229] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[3] get remote terminal sensor failed!
+[   35.768237] stream_cif_mipi_id3: update sensor info failed -19
+[   35.768347] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[0] get remote terminal sensor failed!
+[   35.768354] rkcif_scale_ch0: update sensor info failed -19
+[   35.768466] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[1] get remote terminal sensor failed!
+[   35.768473] rkcif_scale_ch1: update sensor info failed -19
+[   35.768583] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[2] get remote terminal sensor failed!
+[   35.768591] rkcif_scale_ch2: update sensor info failed -19
+[   35.768700] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[3] get remote terminal sensor failed!
+[   35.768707] rkcif_scale_ch3: update sensor info failed -19
+[   35.768824] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[0] get remote terminal sensor failed!
+[   35.768831] rkcif_tools_id0: update sensor info failed -19
+[   35.768937] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[1] get remote terminal sensor failed!
+[   35.768943] rkcif_tools_id1: update sensor info failed -19
+[11862.524669] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[0] get remote terminal sensor failed!
+[11862.524704] stream_cif_mipi_id0: update sensor info failed -19
+[11862.524727] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[1] get remote terminal sensor failed!
+[11862.524736] stream_cif_mipi_id1: update sensor info failed -19
+[11862.524755] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[2] get remote terminal sensor failed!
+[11862.524763] stream_cif_mipi_id2: update sensor info failed -19
+[11862.524781] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[3] get remote terminal sensor failed!
+[11862.524827] stream_cif_mipi_id3: update sensor info failed -19
+[11862.524850] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[0] get remote terminal sensor failed!
+[11862.524858] rkcif_scale_ch0: update sensor info failed -19
+[11862.524877] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[1] get remote terminal sensor failed!
+[11862.524884] rkcif_scale_ch1: update sensor info failed -19
+[11862.524904] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[2] get remote terminal sensor failed!
+[11862.524912] rkcif_scale_ch2: update sensor info failed -19
+[11862.524932] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[3] get remote terminal sensor failed!
+[11862.524939] rkcif_scale_ch3: update sensor info failed -19
+[11862.524958] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[0] get remote terminal sensor failed!
+[11862.524966] rkcif_tools_id0: update sensor info failed -19
+[11862.524986] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[1] get remote terminal sensor failed!
+[11862.524993] rkcif_tools_id1: update sensor info failed -19
+[11862.525013] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[2] get remote terminal sensor failed!
+[11862.525021] rkcif_tools_id2: update sensor info failed -19
+[11862.538618] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[0] get remote terminal sensor failed!
+[11862.538642] stream_cif_mipi_id0: update sensor info failed -19
+[11862.554035] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[0] get remote terminal sensor failed!
+[11862.554090] stream_cif_mipi_id0: update sensor info failed -19
+[11862.563304] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[0] get remote terminal sensor failed!
+[11862.563342] stream_cif_mipi_id0: update sensor info failed -19
+[11862.576621] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[1] get remote terminal sensor failed!
+[11862.576659] stream_cif_mipi_id1: update sensor info failed -19
+[11862.587843] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[1] get remote terminal sensor failed!
+[11862.587905] stream_cif_mipi_id1: update sensor info failed -19
+[11862.602332] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[2] get remote terminal sensor failed!
+[11862.602384] rkcif_tools_id2: update sensor info failed -19
+[11862.612611] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[2] get remote terminal sensor failed!
+[11862.612664] rkcif_tools_id2: update sensor info failed -19
+[11862.725463] rkisp-vir0: rkisp_enum_frameintervals Not active sensor
+[11862.725524] rkisp-vir0: rkisp_enum_frameintervals Not active sensor
+[11862.725541] rkisp-vir0: rkisp_enum_frameintervals Not active sensor
+[11862.725556] rkisp-vir0: rkisp_enum_frameintervals Not active sensor
+[11862.725572] rkisp-vir0: rkisp_enum_frameintervals Not active sensor
+[11862.725588] rkisp-vir0: rkisp_enum_frameintervals Not active sensor
+[11862.725604] rkisp-vir0: rkisp_enum_frameintervals Not active sensor
+[11862.869827] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[2] get remote terminal sensor failed!
+[11862.869859] stream_cif_mipi_id2: update sensor info failed -19
+[11862.879695] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[2] get remote terminal sensor failed!
+[11862.879745] stream_cif_mipi_id2: update sensor info failed -19
+[11863.037016] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[3] get remote terminal sensor failed!
+[11863.037077] stream_cif_mipi_id3: update sensor info failed -19
+[11863.046304] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[3] get remote terminal sensor failed!
+[11863.046339] stream_cif_mipi_id3: update sensor info failed -19
+[11863.058093] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[0] get remote terminal sensor failed!
+[11863.058126] rkcif_scale_ch0: update sensor info failed -19
+[11863.067866] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[0] get remote terminal sensor failed!
+[11863.067917] rkcif_scale_ch0: update sensor info failed -19
+[11863.083398] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[1] get remote terminal sensor failed!
+[11863.083458] rkcif_scale_ch1: update sensor info failed -19
+[11863.091779] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[1] get remote terminal sensor failed!
+[11863.091809] rkcif_scale_ch1: update sensor info failed -19
+[11863.104678] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[2] get remote terminal sensor failed!
+[11863.104713] rkcif_scale_ch2: update sensor info failed -19
+[11863.114779] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[2] get remote terminal sensor failed!
+[11863.114833] rkcif_scale_ch2: update sensor info failed -19
+[11863.126708] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[3] get remote terminal sensor failed!
+[11863.126741] rkcif_scale_ch3: update sensor info failed -19
+[11863.136313] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[3] get remote terminal sensor failed!
+[11863.136366] rkcif_scale_ch3: update sensor info failed -19
+[11863.150426] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[0] get remote terminal sensor failed!
+[11863.150480] rkcif_tools_id0: update sensor info failed -19
+[11863.161302] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[0] get remote terminal sensor failed!
+[11863.161361] rkcif_tools_id0: update sensor info failed -19
+[11863.176310] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[1] get remote terminal sensor failed!
+[11863.176364] rkcif_tools_id1: update sensor info failed -19
+[11863.185051] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[1] get remote terminal sensor failed!
+[11863.185083] rkcif_tools_id1: update sensor info failed -19
+[11978.069315] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[0] get remote terminal sensor failed!
+[11978.069377] stream_cif_mipi_id0: update sensor info failed -19
+[11978.069412] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[1] get remote terminal sensor failed!
+[11978.069422] stream_cif_mipi_id1: update sensor info failed -19
+[11978.069450] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[2] get remote terminal sensor failed!
+[11978.069460] stream_cif_mipi_id2: update sensor info failed -19
+[11978.069487] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[3] get remote terminal sensor failed!
+[11978.069496] stream_cif_mipi_id3: update sensor info failed -19
+[11978.069524] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[0] get remote terminal sensor failed!
+[11978.069533] rkcif_scale_ch0: update sensor info failed -19
+[11978.069561] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[1] get remote terminal sensor failed!
+[11978.069570] rkcif_scale_ch1: update sensor info failed -19
+[11978.069597] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[2] get remote terminal sensor failed!
+[11978.069606] rkcif_scale_ch2: update sensor info failed -19
+[11978.069633] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[3] get remote terminal sensor failed!
+[11978.069643] rkcif_scale_ch3: update sensor info failed -19
+[11978.069669] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[0] get remote terminal sensor failed!
+[11978.069678] rkcif_tools_id0: update sensor info failed -19
+[11978.069704] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[1] get remote terminal sensor failed!
+[11978.069713] rkcif_tools_id1: update sensor info failed -19
+[11978.069739] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[2] get remote terminal sensor failed!
+[11978.069748] rkcif_tools_id2: update sensor info failed -19
+[11978.083840] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[0] get remote terminal sensor failed!
+[11978.083888] stream_cif_mipi_id0: update sensor info failed -19
+[11978.104458] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[0] get remote terminal sensor failed!
+[11978.104517] stream_cif_mipi_id0: update sensor info failed -19
+[11978.118273] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[0] get remote terminal sensor failed!
+[11978.118303] stream_cif_mipi_id0: update sensor info failed -19
+[11978.131061] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[1] get remote terminal sensor failed!
+[11978.131114] stream_cif_mipi_id1: update sensor info failed -19
+[11978.140024] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[1] get remote terminal sensor failed!
+[11978.140059] stream_cif_mipi_id1: update sensor info failed -19
+[11978.152619] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[2] get remote terminal sensor failed!
+[11978.152649] rkcif_tools_id2: update sensor info failed -19
+[11978.162571] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[2] get remote terminal sensor failed!
+[11978.162625] rkcif_tools_id2: update sensor info failed -19
+[11978.260386] rkisp-vir0: rkisp_enum_frameintervals Not active sensor
+[11978.260446] rkisp-vir0: rkisp_enum_frameintervals Not active sensor
+[11978.260460] rkisp-vir0: rkisp_enum_frameintervals Not active sensor
+[11978.260473] rkisp-vir0: rkisp_enum_frameintervals Not active sensor
+[11978.260487] rkisp-vir0: rkisp_enum_frameintervals Not active sensor
+[11978.260500] rkisp-vir0: rkisp_enum_frameintervals Not active sensor
+[11978.260512] rkisp-vir0: rkisp_enum_frameintervals Not active sensor
+[11978.415000] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[2] get remote terminal sensor failed!
+[11978.415052] stream_cif_mipi_id2: update sensor info failed -19
+[11978.424920] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[2] get remote terminal sensor failed!
+[11978.424977] stream_cif_mipi_id2: update sensor info failed -19
+[11978.572965] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[3] get remote terminal sensor failed!
+[11978.573018] stream_cif_mipi_id3: update sensor info failed -19
+[11978.581955] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[3] get remote terminal sensor failed!
+[11978.582010] stream_cif_mipi_id3: update sensor info failed -19
+[11978.595086] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[0] get remote terminal sensor failed!
+[11978.595143] rkcif_scale_ch0: update sensor info failed -19
+[11978.604288] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[0] get remote terminal sensor failed!
+[11978.604340] rkcif_scale_ch0: update sensor info failed -19
+[11978.617775] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[1] get remote terminal sensor failed!
+[11978.617835] rkcif_scale_ch1: update sensor info failed -19
+[11978.627231] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[1] get remote terminal sensor failed!
+[11978.627288] rkcif_scale_ch1: update sensor info failed -19
+[11978.641042] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[2] get remote terminal sensor failed!
+[11978.641102] rkcif_scale_ch2: update sensor info failed -19
+[11978.650179] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[2] get remote terminal sensor failed!
+[11978.650235] rkcif_scale_ch2: update sensor info failed -19
+[11978.663227] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[3] get remote terminal sensor failed!
+[11978.663286] rkcif_scale_ch3: update sensor info failed -19
+[11978.672391] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[3] get remote terminal sensor failed!
+[11978.672440] rkcif_scale_ch3: update sensor info failed -19
+[11978.686382] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[0] get remote terminal sensor failed!
+[11978.686433] rkcif_tools_id0: update sensor info failed -19
+[11978.695243] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[0] get remote terminal sensor failed!
+[11978.695300] rkcif_tools_id0: update sensor info failed -19
+[11978.709264] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[1] get remote terminal sensor failed!
+[11978.709315] rkcif_tools_id1: update sensor info failed -19
+[11978.718403] rkcif-mipi-lvds: rkcif_update_sensor_info: stream[1] get remote terminal sensor failed!
+[11978.718458] rkcif_tools_id1: update sensor info failed -19

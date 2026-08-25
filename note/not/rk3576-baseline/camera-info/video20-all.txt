@@ -1,0 +1,1 @@
+Failed to open /dev/video20: Inappropriate ioctl for device

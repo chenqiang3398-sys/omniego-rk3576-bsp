@@ -1,0 +1,12 @@
+replaygain:  rganalysis: ReplayGain analysis
+rockchipmpp:  mpph264enc: Rockchip Mpp H264 Encoder
+rockchipmpp:  mpph265enc: Rockchip Mpp H265 Encoder
+rockchipmpp:  mppjpegdec: Rockchip's MPP JPEG image decoder
+rockchipmpp:  mppjpegenc: Rockchip Mpp JPEG Encoder
+rockchipmpp:  mppvideodec: Rockchip's MPP video decoder
+rockchipmpp:  mppvpxalphadecodebin: VP8/VP9 Alpha Decoder
+typefindfunctions: audio/x-musepack: mpc, mpp, mp+
+video4linux2:  v4l2deviceprovider (GstDeviceProviderFactory)
+video4linux2:  v4l2radio: Radio (video4linux2) Tuner
+video4linux2:  v4l2sink: Video (video4linux2) Sink
+video4linux2:  v4l2src: Video (video4linux2) Source

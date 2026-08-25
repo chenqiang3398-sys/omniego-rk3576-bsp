@@ -1,0 +1,59 @@
+[    2.567379] iep: Module initialized.
+[    2.567414] mpp_service mpp-srv: unknown mpp version for missing VCS info
+[    2.567422] mpp_service mpp-srv: probe start
+[    2.569460] mpp_rkvenc2 rkvenc-ccu: probing start
+[    2.569471] mpp_rkvenc2 rkvenc-ccu: probing finish
+[    2.569905] mpp_service mpp-srv: probe success
+[    4.798637] rga2 27920000.rga: Adding to iommu group 2
+[    4.799101] rga2 27920000.rga: probe successfully, irq = 50, hw_version:3.e.19357
+[    4.799301] rga2 27930000.rga: Adding to iommu group 3
+[    4.799745] rga2 27930000.rga: probe successfully, irq = 51, hw_version:3.e.19357
+[    4.800040] rga: IOMMU binding successfully, default mapping core[0x4]
+[    4.800266] rga: Module initialized. v1.3.7
+[    4.824987] mpp-iep2 27960000.iep: Adding to iommu group 4
+[    4.825305] mpp-iep2 27960000.iep: probe device
+[    4.825495] mpp-iep2 27960000.iep: reset_group->rw_sem_on=0
+[    4.825511] mpp-iep2 27960000.iep: reset_group->rw_sem_on=0
+[    4.825525] mpp-iep2 27960000.iep: reset_group->rw_sem_on=0
+[    4.825589] mpp-iep2 27960000.iep: probing finish
+[    4.825832] mpp_jpgdec 27910000.jpegd: Adding to iommu group 1
+[    4.826101] mpp_jpgdec 27910000.jpegd: probe device
+[    4.826279] mpp_jpgdec 27910000.jpegd: reset_group->rw_sem_on=0
+[    4.826294] mpp_jpgdec 27910000.jpegd: reset_group->rw_sem_on=0
+[    4.826362] mpp_jpgdec 27910000.jpegd: probing finish
+[    4.826611] mpp_jpgenc 27910800.jpege: Adding to iommu group 1
+[    4.826677] mpp_jpgenc 27910800.jpege: probe device
+[    4.826834] mpp_jpgenc 27910800.jpege: reset_group->rw_sem_on=0
+[    4.826845] mpp_jpgenc 27910800.jpege: reset_group->rw_sem_on=0
+[    4.826906] mpp_jpgenc 27910800.jpege: probe finish
+[    4.827129] mpp_rkvdec2 27b00100.rkvdec: Adding to iommu group 7
+[    4.827480] mpp_rkvdec2 27b00100.rkvdec: rkvdec, probing start
+[    4.827714] mpp_rkvdec2 27b00100.rkvdec: shared_niu_a is not found!
+[    4.827724] rkvdec2_init:1198: No niu aclk reset resource define
+[    4.827733] mpp_rkvdec2 27b00100.rkvdec: shared_niu_h is not found!
+[    4.827741] rkvdec2_init:1201: No niu hclk reset resource define
+[    4.827754] mpp_rkvdec2 27b00100.rkvdec: shared_video_cabac is not found!
+[    4.827762] rkvdec2_init:1207: No cabac reset resource define
+[    4.827800] mpp_rkvdec2 27b00100.rkvdec: no regulator, devfreq is disabled
+[    4.827993] mpp_rkvdec2 27b00100.rkvdec: sram_start 0x000000003ff88000
+[    4.828004] mpp_rkvdec2 27b00100.rkvdec: rcb_iova 0x0000000010000000
+[    4.828012] mpp_rkvdec2 27b00100.rkvdec: sram_size 491520
+[    4.828020] mpp_rkvdec2 27b00100.rkvdec: rcb_size 491520
+[    4.828030] mpp_rkvdec2 27b00100.rkvdec: min_width 512
+[    4.828062] mpp_rkvdec2 27b00100.rkvdec: link mode probe finish
+[    4.828114] mpp_rkvdec2 27b00100.rkvdec: probing finish
+[    4.828133] mpp_rkvdec2 27b00100.rkvdec: probing finish
+[    4.828422] mpp_rkvenc2 27a00000.rkvenc-core: Adding to iommu group 5
+[    4.828777] mpp_rkvenc2 27a00000.rkvenc-core: probing start
+[    4.828997] mpp_rkvenc2 27a00000.rkvenc-core: failed to init opp info
+[    4.829008] mpp_rkvenc2 27a00000.rkvenc-core: failed to init_opp_table
+[    4.829015] rkvenc_init:2147: failed to add venc devfreq
+[    4.829082] mpp_rkvenc2 27a00000.rkvenc-core: attach ccu as core 0
+[    4.829131] mpp_rkvenc2 27a00000.rkvenc-core: probing finish
+[    4.829358] mpp_rkvenc2 27a10000.rkvenc-core: Adding to iommu group 6
+[    4.829643] mpp_rkvenc2 27a10000.rkvenc-core: probing start
+[    4.829837] mpp_rkvenc2 27a10000.rkvenc-core: failed to init opp info
+[    4.829847] mpp_rkvenc2 27a10000.rkvenc-core: failed to init_opp_table
+[    4.829854] rkvenc_init:2147: failed to add venc devfreq
+[    4.829904] mpp_rkvenc2 27a10000.rkvenc-core: attach ccu as core 1
+[    4.829947] mpp_rkvenc2 27a10000.rkvenc-core: probing finish

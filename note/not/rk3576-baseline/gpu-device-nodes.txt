@@ -1,0 +1,12 @@
+crw-rw----+ 1 root video  226,   0 2025年 6月26日 /dev/dri/card0
+crw-rw----+ 1 root video  226,   1 2025年 6月26日 /dev/dri/card1
+crw-rw----+ 1 root render 226, 128 2025年 6月26日 /dev/dri/renderD128
+crw-rw----+ 1 root render 226, 129 2025年 6月26日 /dev/dri/renderD129
+crw-rw----  1 root video   10, 120 2025年 6月26日 /dev/mali0
+
+/dev/dri/by-path:
+总计 0
+lrwxrwxrwx 1 root root  8 2025年 6月26日 platform-27700000.npu-card -> ../card1
+lrwxrwxrwx 1 root root 13 2025年 6月26日 platform-27700000.npu-render -> ../renderD129
+lrwxrwxrwx 1 root root  8 2025年 6月26日 platform-display-subsystem-card -> ../card0
+lrwxrwxrwx 1 root root 13 2025年 6月26日 platform-display-subsystem-render -> ../renderD128

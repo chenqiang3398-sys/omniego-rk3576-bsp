@@ -1,0 +1,12 @@
+arm_release_ver: g24p0-00eac0, rk_so_ver: 7
+=======================================================
+    glmark2 2023.01
+=======================================================
+    OpenGL Information
+    GL_VENDOR:      ARM
+    GL_RENDERER:    Mali-G52
+    GL_VERSION:     OpenGL ES 3.2 v1.g24p0-00eac0.4f825ed56fb37b32dde262046b053498
+    Surface Config: buf=32 r=8 g=8 b=8 a=8 depth=24 stencil=0 samples=0
+    Surface Size:   800x600 windowed
+=======================================================
+[build] use-vbo=false:

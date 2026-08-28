@@ -7,6 +7,12 @@ less
 locales
 net-tools
 network-manager
+wpa-supplicant
+wireless-regdb
+rfkill
+iw
+usbutils
+bluez
 openssh-server
 procps
 sudo
@@ -15,4 +21,3 @@ systemd-sysv
 udev
 vim-tiny
 wget
-

@@ -85,6 +85,19 @@ for firmware_dir in \
 	cp -a "$firmware_dir/." "$TARGET_ROOTFS_DIR/lib/firmware/"
 done
 
+# AIC8800D80 USB firmware is supplied by the board vendor.  The vendor
+# driver requests these names from /vendor/etc/firmware, while other Linux
+# consumers use /lib/firmware; keep both paths populated in the image.
+if [ -d "$SCRIPT_DIR/overlay-firmware" ]; then
+	echo "Installing vendor firmware overlay..."
+	cp -a "$SCRIPT_DIR/overlay-firmware/." "$TARGET_ROOTFS_DIR/"
+	if [ -d "$TARGET_ROOTFS_DIR/vendor/etc/firmware" ]; then
+		mkdir -p "$TARGET_ROOTFS_DIR/lib/firmware"
+		cp -a "$TARGET_ROOTFS_DIR/vendor/etc/firmware/." \
+			"$TARGET_ROOTFS_DIR/lib/firmware/"
+	fi
+fi
+
 rm -f "$TARGET_ROOTFS_DIR/usr/bin/qemu-aarch64-static"
 cleanup_chroot_filesystems
 

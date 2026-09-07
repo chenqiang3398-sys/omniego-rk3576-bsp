@@ -1,0 +1,10 @@
+[Unit]
+Description=Re-probe X11 outputs after Rockchip DRM hotplug
+After=display-manager.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/libexec/rk-hdmi-hotplug
+
+[Install]
+WantedBy=graphical.target

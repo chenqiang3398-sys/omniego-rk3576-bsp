@@ -1,0 +1,42 @@
+#!/bin/sh
+
+# Xorg normally consumes DRM hotplug events itself, but the vendor DRM stack
+# can start with no active connector when HDMI is absent at boot. Ask the
+# already-running LightDM X server to re-read connectors on each DRM change.
+set -eu
+
+xpid="$(pgrep -xo Xorg 2>/dev/null || true)"
+[ -n "$xpid" ] || exit 0
+
+set -- $(tr '\0' ' ' < "/proc/$xpid/cmdline")
+display=:0
+auth=
+while [ "$#" -gt 0 ]; do
+	case "$1" in
+		:[0-9]*) display="$1" ;;
+		-auth)
+			shift
+			[ "$#" -gt 0 ] && auth="$1"
+			;;
+	esac
+	shift
+done
+[ -n "$auth" ] && [ -r "$auth" ] || exit 0
+
+# EDID propagation may trail the uevent slightly. Retry for five seconds.
+i=0
+while [ "$i" -lt 10 ]; do
+	outputs="$(DISPLAY="$display" XAUTHORITY="$auth" xrandr --query 2>/dev/null \
+		| awk '$2 == "connected" { print $1 }')"
+	if [ -n "$outputs" ]; then
+		for output in $outputs; do
+			DISPLAY="$display" XAUTHORITY="$auth" \
+				xrandr --output "$output" --auto || true
+		done
+		exit 0
+	fi
+	i=$((i + 1))
+	sleep 0.5
+done
+
+exit 0

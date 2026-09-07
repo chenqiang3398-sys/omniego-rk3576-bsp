@@ -14,6 +14,36 @@ find /tmp/ubuntu-packages -type f -name '*.packages' -print0 \
 	| sed '/^[[:space:]]*#/d;/^[[:space:]]*$/d' \
 	| xargs -r apt-get install -y --no-install-recommends
 
+# Verify the exact vendor payload selected for RK3576 before installation.
+# Installing all .debs in one apt transaction lets apt order interdependent
+# MPP/RGA/GStreamer packages and fails the image build on unresolved Depends.
+if [ -f /tmp/ubuntu-packages/vendor-packages.sha256 ]; then
+	(cd /tmp/ubuntu-packages && sha256sum -c vendor-packages.sha256)
+fi
+shopt -s nullglob
+vendor_debs=(/tmp/ubuntu-packages/*.deb)
+if [ "${#vendor_debs[@]}" -gt 0 ]; then
+	apt-get install -y --no-install-recommends "${vendor_debs[@]}"
+fi
+
+# rknpu2.tar is the vendor's userspace runtime payload, not a Debian package.
+# Extract only RK3576 runtime/tools/model files; do not import models for other
+# SoCs or any unrelated files from the Debian rootfs.
+if [ -f /tmp/ubuntu-packages/rknpu2-rk3576.tar ]; then
+	tar -xf /tmp/ubuntu-packages/rknpu2-rk3576.tar -C / \
+		./usr/lib/librknnrt.so \
+		./usr/bin/rknn_common_test \
+		./usr/bin/rknn_server \
+		./usr/bin/restart_rknn.sh \
+		./usr/bin/start_rknn.sh \
+		./usr/share/model/dog_224x224.jpg \
+		./usr/share/model/cat_224x224.jpg \
+		./usr/share/model/RK3576/mobilenet_v1.rknn
+	chmod 0755 /usr/bin/rknn_common_test /usr/bin/rknn_server \
+		/usr/bin/restart_rknn.sh /usr/bin/start_rknn.sh
+fi
+ldconfig
+
 echo "en_US.UTF-8 UTF-8" > /etc/locale.gen
 locale-gen
 update-locale LANG=en_US.UTF-8
@@ -60,6 +90,11 @@ EOF
 else
 	systemctl set-default multi-user.target
 fi
+
+# RKAIQ is included for the later MIPI-camera phase, but starting it without a
+# connected sensor only creates repeated RKCIF errors. Enable it with the
+# matching sensor/IQ file during board-camera integration.
+systemctl disable rkaiq_3A.service 2>/dev/null || true
 
 cat > /etc/fstab <<'EOF'
 PARTUUID=614e0000-0000-4b53-8000-1d28000054a9 / ext4 defaults,noatime 0 1

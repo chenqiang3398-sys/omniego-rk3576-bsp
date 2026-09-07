@@ -7,7 +7,7 @@ less
 locales
 net-tools
 network-manager
-wpa-supplicant
+wpasupplicant
 wireless-regdb
 rfkill
 iw

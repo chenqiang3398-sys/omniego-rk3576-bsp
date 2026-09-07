@@ -58,6 +58,15 @@ fi
 install -m 0755 "$SCRIPT_DIR/configure-target.sh" \
 	"$TARGET_ROOTFS_DIR/tmp/configure-target.sh"
 
+# Keep vendor ARM64 packages inside the target tree so configure-target.sh
+# can install them with the target dpkg database during the chroot stage.
+if [ -d "$SCRIPT_DIR/packages/arm64" ]; then
+	install -d -m 0755 "$TARGET_ROOTFS_DIR/tmp/ubuntu-packages"
+	find "$SCRIPT_DIR/packages/arm64" -maxdepth 1 -type f \
+		\( -name '*.deb' -o -name '*.tar' -o -name '*.sha256' \) \
+		-exec install -m 0644 {} "$TARGET_ROOTFS_DIR/tmp/ubuntu-packages/" \;
+fi
+
 ROOTFS_HOSTNAME="$ROOTFS_HOSTNAME" TARGET_USER="$TARGET_USER" \
 	TARGET_PASSWORD="$TARGET_PASSWORD" UBUNTU_PROFILE="$UBUNTU_PROFILE" \
 	chroot "$TARGET_ROOTFS_DIR" /tmp/configure-target.sh
@@ -67,6 +76,10 @@ ROOTFS_HOSTNAME="$ROOTFS_HOSTNAME" TARGET_USER="$TARGET_USER" \
 if [ -d "$SCRIPT_DIR/overlay" ]; then
 	echo "Installing Ubuntu rootfs overlay..."
 	cp -a "$SCRIPT_DIR/overlay/." "$TARGET_ROOTFS_DIR/"
+	if [ "$UBUNTU_PROFILE" = desktop ]; then
+		# The unit is provided by the overlay, so enable it only after copying.
+		chroot "$TARGET_ROOTFS_DIR" systemctl enable rk-hdmi-hotplug.service
+	fi
 fi
 
 echo "Installing kernel modules from $KERNEL_MODULES_DIR..."

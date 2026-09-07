@@ -1,0 +1,3 @@
+# DRM connector changes are forwarded to systemd so the LightDM X server can
+# re-probe HDMI that is connected after boot.
+ACTION=="change", SUBSYSTEM=="drm", KERNEL=="card*-HDMI-A-*", TAG+="systemd", ENV{SYSTEMD_WANTS}+="rk-hdmi-hotplug.service"
